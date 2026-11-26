@@ -210,7 +210,7 @@ public sealed class LauncherForm : Form
     readonly PlayerProfile profile;
     readonly string serverExe;
     readonly TextBox name = new TextBox(), host = new TextBox(), peers = new TextBox();
-    readonly NumericUpDown port = new NumericUpDown();
+    readonly PortBox port = new PortBox();
     readonly Label panelStatus = new Label();
     readonly FlatButton play = new FlatButton(), settings = new FlatButton(), query = new FlatButton(), server = new FlatButton(), unlock = new FlatButton(), gear = new FlatButton();
     readonly Panel rail = new BufferedPanel(), titleBar = new BufferedPanel();
@@ -475,7 +475,7 @@ public sealed class LauncherForm : Form
         Caption("Configurações", 20, true);
         Caption("Seu apelido", 58); Field(name, 24, 78, w); name.Text = profile.Name; name.MaxLength = 32;
         Caption("Servidor", 114);
-        presetBox.SetBounds(24, 134, w, 28); presetBox.DropDownStyle = ComboBoxStyle.DropDownList; presetBox.FlatStyle = FlatStyle.Flat;
+        presetBox.SetBounds(24, 134, w, 28);
         presetBox.BackColor = Theme.Field; presetBox.ForeColor = Theme.Text; presetBox.Font = new Font("Segoe UI", 10.5f); panel.Controls.Add(presetBox);
         Field(host, 24, 168, w - 92); host.Text = profile.Host;
         port.SetBounds(24 + w - 84, 168, 84, 28); port.Minimum = 1; port.Maximum = 65535; port.Value = profile.QueryPort;
@@ -510,7 +510,7 @@ public sealed class LauncherForm : Form
     }
 
     // ---------- server presets ----------
-    readonly ComboBox presetBox = new ComboBox();
+    readonly DarkCombo presetBox = new DarkCombo();
     List<ServerPreset> presets;
     static readonly string CustomPreset = "Personalizado";
     bool syncingPreset;
@@ -720,6 +720,8 @@ public sealed class LauncherForm : Form
     readonly Label updateLabel = new Label();
     async void CheckForUpdates()
     {
+        // Dev mode (host PC): <client>/launcher/dev.txt disables auto-update so local builds aren't replaced by the release exe.
+        if (File.Exists(Path.Combine(root, "launcher", "dev.txt"))) { updateLabel.Text = "· modo dev (sem atualização)"; return; }
         updateLabel.Text = "· verificando atualizações…";
         try
         {
@@ -826,7 +828,7 @@ public sealed class UpdateResult
 }
 public static class Updater
 {
-    public const string Version = "0.5";
+    public const string Version = "0.6";
     public const string Repo = "MiguelMussalam/ballistic-launcher";
     const string PublicKeyXml = "<RSAKeyValue><Modulus>yZTNj2m7COE7sXRyrZkt/0KIapxj9GHVMOoTS2X80oXh0NC3uQLIofCgOJhNY+6gVyczjtO1k76Wrn4B45uYEkHIeZLDtUcKUnaZweaI2f+EllCuAxE5uAr3LFQsjVJGzlXJwk9FO4pjzl1or1XSPy/n3N4Z1YQLfehNJ8UYapXMJZ1vlz/f3W0RfAhDtiUAWHZ5x5WKxTAFTGioi8790fIEwRsR6+fesapwuL0eiH21UHJ7KqGAd+jIZzK8mg/egnJ42mDzemIIxhIEvNvXVNVlhWLdxlDzOZueHez29PQrOshUn65eZ2r99QJi4zGXjyn8NQ65W3o6JjN9AuOAZQ==</Modulus><Exponent>AQAB</Exponent></RSAKeyValue>";
     const string SettingsDir = "BallisticOverkill_Data/Plugins/steam_settings/";
@@ -906,7 +908,10 @@ public static class Updater
     }
     public static void CleanupAfterSelfUpdate()
     {
-        try { string old = Application.ExecutablePath + ".old"; if (File.Exists(old)) File.Delete(old); } catch { }
+        // The previous process may still hold the old exe for a moment after restarting: retry in the background.
+        string old = Application.ExecutablePath + ".old";
+        if (!File.Exists(old)) return;
+        Task.Run(async () => { for (int i = 0; i < 20 && File.Exists(old); i++) { try { File.Delete(old); } catch { } if (File.Exists(old)) await Task.Delay(500); } });
     }
 }
 
@@ -918,5 +923,107 @@ public class GlassPanel : BufferedPanel
     protected override void OnPaintBackground(PaintEventArgs e)
     {
         if (Backdrop != null) Backdrop(e.Graphics); else base.OnPaintBackground(e);
+    }
+}
+
+// Port field: plain themed TextBox (digits only, mouse wheel +/-1) instead of the native NumericUpDown spinner.
+// Keeps the NumericUpDown-like surface used by the form (Value, Minimum, Maximum, ValueChanged).
+public class PortBox : TextBox
+{
+    public decimal Minimum = 1, Maximum = 65535;
+    public event EventHandler ValueChanged;
+    public PortBox() { MaxLength = 5; }
+    public decimal Value
+    {
+        get { int v; return Int32.TryParse(Text, out v) ? Math.Max(Minimum, Math.Min(Maximum, v)) : Minimum; }
+        set { Text = ((int)Math.Max(Minimum, Math.Min(Maximum, value))).ToString(); }
+    }
+    protected override void OnKeyPress(KeyPressEventArgs e)
+    {
+        if (!Char.IsControl(e.KeyChar) && !Char.IsDigit(e.KeyChar)) e.Handled = true;
+        base.OnKeyPress(e);
+    }
+    protected override void OnMouseWheel(MouseEventArgs e) { Value = Value + Math.Sign(e.Delta); base.OnMouseWheel(e); }
+    protected override void OnLeave(EventArgs e) { Value = Value; base.OnLeave(e); } // normalize empty/out-of-range on blur
+    protected override void OnTextChanged(EventArgs e) { base.OnTextChanged(e); if (ValueChanged != null) ValueChanged(this, e); }
+}
+
+// Themed dropdown replacing the native ComboBox (whose arrow button and blue selection can't be restyled).
+// Same surface the form uses: Items, SelectedItem, SelectedIndex, SelectedIndexChanged.
+public class DarkCombo : Control
+{
+    public readonly List<object> Items = new List<object>();
+    public event EventHandler SelectedIndexChanged;
+    object selected;
+    bool hover, open;
+    public DarkCombo()
+    {
+        SetStyle(ControlStyles.AllPaintingInWmPaint | ControlStyles.OptimizedDoubleBuffer | ControlStyles.UserPaint | ControlStyles.ResizeRedraw | ControlStyles.Selectable, true);
+        Cursor = Cursors.Hand; Font = new Font("Segoe UI", 10.5f); BackColor = Theme.Field; ForeColor = Theme.Text;
+    }
+    public object SelectedItem
+    {
+        get { return selected; }
+        set { if (Equals(selected, value)) return; selected = value; Invalidate(); if (SelectedIndexChanged != null) SelectedIndexChanged(this, EventArgs.Empty); }
+    }
+    public int SelectedIndex
+    {
+        get { return selected == null ? -1 : Items.IndexOf(selected); }
+        set { SelectedItem = value >= 0 && value < Items.Count ? Items[value] : null; }
+    }
+    protected override void OnMouseEnter(EventArgs e) { hover = true; Invalidate(); base.OnMouseEnter(e); }
+    protected override void OnMouseLeave(EventArgs e) { hover = false; Invalidate(); base.OnMouseLeave(e); }
+    protected override void OnMouseDown(MouseEventArgs e) { if (e.Button == MouseButtons.Left && !open) ShowList(); base.OnMouseDown(e); }
+    protected override void OnKeyDown(KeyEventArgs e)
+    {
+        if (e.KeyCode == Keys.Down && SelectedIndex < Items.Count - 1) SelectedIndex++;
+        else if (e.KeyCode == Keys.Up && SelectedIndex > 0) SelectedIndex--;
+        else if (e.KeyCode == Keys.Enter || e.KeyCode == Keys.Space || e.KeyCode == Keys.F4) ShowList();
+        base.OnKeyDown(e);
+    }
+    protected override void OnPaint(PaintEventArgs e)
+    {
+        var g = e.Graphics; var r = new Rectangle(0, 0, Width - 1, Height - 1);
+        using (var b = new SolidBrush(hover || open ? Color.FromArgb(34, 40, 50) : Theme.Field)) g.FillRectangle(b, r);
+        using (var p = new Pen(open ? Theme.Accent : (hover ? Color.FromArgb(92, 102, 118) : Color.FromArgb(70, 78, 92)))) g.DrawRectangle(p, r);
+        var flags = TextFormatFlags.VerticalCenter | TextFormatFlags.SingleLine | TextFormatFlags.EndEllipsis;
+        TextRenderer.DrawText(g, selected == null ? "" : selected.ToString(), Font, new Rectangle(8, 0, Width - 40, Height), ForeColor, flags);
+        using (var icon = new Font(Theme.IconFont, 8f))
+            TextRenderer.DrawText(g, open ? "\uE70E" : "\uE70D", icon, new Rectangle(Width - 30, 0, 24, Height), Theme.Muted, flags | TextFormatFlags.HorizontalCenter);
+    }
+    void ShowList()
+    {
+        var menu = new ContextMenuStrip { Renderer = new DarkMenuRenderer(), ShowImageMargin = false, ShowCheckMargin = false, Font = Font, ForeColor = Theme.Text, BackColor = Theme.Field, Padding = new Padding(0, 2, 0, 2) };
+        foreach (var item in Items)
+        {
+            var mi = new ToolStripMenuItem(item.ToString()) { Tag = item, AutoSize = false, Size = new Size(Width - 2, 30), Checked = Equals(item, selected), Padding = new Padding(0) };
+            mi.Click += delegate(object s, EventArgs a) { SelectedItem = ((ToolStripItem)s).Tag; };
+            menu.Items.Add(mi);
+        }
+        // Dispose after the close/click processing finishes: disposing inside Closed crashed (item Click still runs afterwards).
+        menu.Closed += delegate { open = false; if (!IsDisposed) { Invalidate(); BeginInvoke((Action)menu.Dispose); } };
+        menu.MinimumSize = new Size(Width, 0); // same width as the field
+        open = true; Invalidate();
+        menu.Show(this, new Point(0, Height));
+    }
+}
+
+// Dark renderer for the dropdown list: panel colors, accent highlight, current item marked with a light background.
+public class DarkMenuRenderer : ToolStripProfessionalRenderer
+{
+    protected override void OnRenderToolStripBackground(ToolStripRenderEventArgs e) { using (var b = new SolidBrush(Theme.Field)) e.Graphics.FillRectangle(b, e.AffectedBounds); }
+    protected override void OnRenderToolStripBorder(ToolStripRenderEventArgs e)
+    { using (var p = new Pen(Color.FromArgb(70, 78, 92))) e.Graphics.DrawRectangle(p, 0, 0, e.AffectedBounds.Width - 1, e.AffectedBounds.Height - 1); }
+    protected override void OnRenderMenuItemBackground(ToolStripItemRenderEventArgs e)
+    {
+        var item = (ToolStripMenuItem)e.Item; var r = new Rectangle(1, 0, e.Item.Width - 2, e.Item.Height);
+        Color c = item.Selected ? Theme.Accent : (item.Checked ? Color.FromArgb(40, 47, 58) : Theme.Field);
+        using (var b = new SolidBrush(c)) e.Graphics.FillRectangle(b, r);
+    }
+    protected override void OnRenderItemCheck(ToolStripItemImageRenderEventArgs e) { } // highlight instead of a check mark
+    protected override void OnRenderItemText(ToolStripItemTextRenderEventArgs e)
+    {
+        TextRenderer.DrawText(e.Graphics, e.Text, e.TextFont, new Rectangle(8, 0, e.Item.Width - 12, e.Item.Height), Theme.Text,
+            TextFormatFlags.VerticalCenter | TextFormatFlags.SingleLine | TextFormatFlags.EndEllipsis);
     }
 }

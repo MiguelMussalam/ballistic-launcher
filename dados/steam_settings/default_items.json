@@ -1,0 +1,5742 @@
+{
+ "1": {
+  "definition": 6001,
+  "quantity": 1
+ },
+ "2": {
+  "definition": 6002,
+  "quantity": 1
+ },
+ "3": {
+  "definition": 6003,
+  "quantity": 1
+ },
+ "4": {
+  "definition": 6004,
+  "quantity": 1
+ },
+ "5": {
+  "definition": 6005,
+  "quantity": 1
+ },
+ "6": {
+  "definition": 6006,
+  "quantity": 1
+ },
+ "7": {
+  "definition": 6007,
+  "quantity": 1
+ },
+ "8": {
+  "definition": 6008,
+  "quantity": 1
+ },
+ "9": {
+  "definition": 6009,
+  "quantity": 1
+ },
+ "10": {
+  "definition": 6010,
+  "quantity": 1
+ },
+ "11": {
+  "definition": 6011,
+  "quantity": 1
+ },
+ "12": {
+  "definition": 6012,
+  "quantity": 1
+ },
+ "13": {
+  "definition": 6013,
+  "quantity": 1
+ },
+ "14": {
+  "definition": 6015,
+  "quantity": 1
+ },
+ "15": {
+  "definition": 6016,
+  "quantity": 1
+ },
+ "16": {
+  "definition": 6043,
+  "quantity": 1
+ },
+ "17": {
+  "definition": 8004,
+  "quantity": 1
+ },
+ "18": {
+  "definition": 9001,
+  "quantity": 1
+ },
+ "19": {
+  "definition": 9002,
+  "quantity": 1
+ },
+ "20": {
+  "definition": 9003,
+  "quantity": 1
+ },
+ "21": {
+  "definition": 9004,
+  "quantity": 1
+ },
+ "22": {
+  "definition": 9005,
+  "quantity": 1
+ },
+ "23": {
+  "definition": 9006,
+  "quantity": 1
+ },
+ "24": {
+  "definition": 9007,
+  "quantity": 1
+ },
+ "25": {
+  "definition": 9008,
+  "quantity": 1
+ },
+ "26": {
+  "definition": 9010,
+  "quantity": 1
+ },
+ "27": {
+  "definition": 9011,
+  "quantity": 1
+ },
+ "28": {
+  "definition": 9012,
+  "quantity": 1
+ },
+ "29": {
+  "definition": 9013,
+  "quantity": 1
+ },
+ "30": {
+  "definition": 9019,
+  "quantity": 1
+ },
+ "31": {
+  "definition": 9023,
+  "quantity": 1
+ },
+ "32": {
+  "definition": 9043,
+  "quantity": 1
+ },
+ "33": {
+  "definition": 9048,
+  "quantity": 1
+ },
+ "34": {
+  "definition": 11001,
+  "quantity": 1
+ },
+ "35": {
+  "definition": 11002,
+  "quantity": 1
+ },
+ "36": {
+  "definition": 11003,
+  "quantity": 1
+ },
+ "37": {
+  "definition": 11004,
+  "quantity": 1
+ },
+ "38": {
+  "definition": 11005,
+  "quantity": 1
+ },
+ "39": {
+  "definition": 11006,
+  "quantity": 1
+ },
+ "40": {
+  "definition": 11007,
+  "quantity": 1
+ },
+ "41": {
+  "definition": 11008,
+  "quantity": 1
+ },
+ "42": {
+  "definition": 11009,
+  "quantity": 1
+ },
+ "43": {
+  "definition": 11010,
+  "quantity": 1
+ },
+ "44": {
+  "definition": 11011,
+  "quantity": 1
+ },
+ "45": {
+  "definition": 11012,
+  "quantity": 1
+ },
+ "46": {
+  "definition": 11013,
+  "quantity": 1
+ },
+ "47": {
+  "definition": 11018,
+  "quantity": 1
+ },
+ "48": {
+  "definition": 11043,
+  "quantity": 1
+ },
+ "49": {
+  "definition": 11047,
+  "quantity": 1
+ },
+ "50": {
+  "definition": 12001,
+  "quantity": 1
+ },
+ "51": {
+  "definition": 12002,
+  "quantity": 1
+ },
+ "52": {
+  "definition": 12003,
+  "quantity": 1
+ },
+ "53": {
+  "definition": 12004,
+  "quantity": 1
+ },
+ "54": {
+  "definition": 12005,
+  "quantity": 1
+ },
+ "55": {
+  "definition": 12006,
+  "quantity": 1
+ },
+ "56": {
+  "definition": 12007,
+  "quantity": 1
+ },
+ "57": {
+  "definition": 12008,
+  "quantity": 1
+ },
+ "58": {
+  "definition": 12009,
+  "quantity": 1
+ },
+ "59": {
+  "definition": 12010,
+  "quantity": 1
+ },
+ "60": {
+  "definition": 12011,
+  "quantity": 1
+ },
+ "61": {
+  "definition": 12012,
+  "quantity": 1
+ },
+ "62": {
+  "definition": 12013,
+  "quantity": 1
+ },
+ "63": {
+  "definition": 12018,
+  "quantity": 1
+ },
+ "64": {
+  "definition": 12043,
+  "quantity": 1
+ },
+ "65": {
+  "definition": 14001,
+  "quantity": 1
+ },
+ "66": {
+  "definition": 14002,
+  "quantity": 1
+ },
+ "67": {
+  "definition": 14003,
+  "quantity": 1
+ },
+ "68": {
+  "definition": 14004,
+  "quantity": 1
+ },
+ "69": {
+  "definition": 14005,
+  "quantity": 1
+ },
+ "70": {
+  "definition": 14006,
+  "quantity": 1
+ },
+ "71": {
+  "definition": 14007,
+  "quantity": 1
+ },
+ "72": {
+  "definition": 14008,
+  "quantity": 1
+ },
+ "73": {
+  "definition": 14009,
+  "quantity": 1
+ },
+ "74": {
+  "definition": 14010,
+  "quantity": 1
+ },
+ "75": {
+  "definition": 14011,
+  "quantity": 1
+ },
+ "76": {
+  "definition": 14012,
+  "quantity": 1
+ },
+ "77": {
+  "definition": 14013,
+  "quantity": 1
+ },
+ "78": {
+  "definition": 14015,
+  "quantity": 1
+ },
+ "79": {
+  "definition": 14017,
+  "quantity": 1
+ },
+ "80": {
+  "definition": 14043,
+  "quantity": 1
+ },
+ "81": {
+  "definition": 15013,
+  "quantity": 1
+ },
+ "82": {
+  "definition": 16009,
+  "quantity": 1
+ },
+ "83": {
+  "definition": 17001,
+  "quantity": 1
+ },
+ "84": {
+  "definition": 17002,
+  "quantity": 1
+ },
+ "85": {
+  "definition": 17003,
+  "quantity": 1
+ },
+ "86": {
+  "definition": 17004,
+  "quantity": 1
+ },
+ "87": {
+  "definition": 17005,
+  "quantity": 1
+ },
+ "88": {
+  "definition": 17006,
+  "quantity": 1
+ },
+ "89": {
+  "definition": 17007,
+  "quantity": 1
+ },
+ "90": {
+  "definition": 17008,
+  "quantity": 1
+ },
+ "91": {
+  "definition": 17010,
+  "quantity": 1
+ },
+ "92": {
+  "definition": 17011,
+  "quantity": 1
+ },
+ "93": {
+  "definition": 17012,
+  "quantity": 1
+ },
+ "94": {
+  "definition": 17013,
+  "quantity": 1
+ },
+ "95": {
+  "definition": 17019,
+  "quantity": 1
+ },
+ "96": {
+  "definition": 17043,
+  "quantity": 1
+ },
+ "97": {
+  "definition": 17048,
+  "quantity": 1
+ },
+ "98": {
+  "definition": 19001,
+  "quantity": 1
+ },
+ "99": {
+  "definition": 19002,
+  "quantity": 1
+ },
+ "100": {
+  "definition": 19003,
+  "quantity": 1
+ },
+ "101": {
+  "definition": 19004,
+  "quantity": 1
+ },
+ "102": {
+  "definition": 19005,
+  "quantity": 1
+ },
+ "103": {
+  "definition": 19006,
+  "quantity": 1
+ },
+ "104": {
+  "definition": 19007,
+  "quantity": 1
+ },
+ "105": {
+  "definition": 19008,
+  "quantity": 1
+ },
+ "106": {
+  "definition": 19009,
+  "quantity": 1
+ },
+ "107": {
+  "definition": 19010,
+  "quantity": 1
+ },
+ "108": {
+  "definition": 19011,
+  "quantity": 1
+ },
+ "109": {
+  "definition": 19012,
+  "quantity": 1
+ },
+ "110": {
+  "definition": 19013,
+  "quantity": 1
+ },
+ "111": {
+  "definition": 19036,
+  "quantity": 1
+ },
+ "112": {
+  "definition": 19037,
+  "quantity": 1
+ },
+ "113": {
+  "definition": 19043,
+  "quantity": 1
+ },
+ "114": {
+  "definition": 19046,
+  "quantity": 1
+ },
+ "115": {
+  "definition": 20001,
+  "quantity": 1
+ },
+ "116": {
+  "definition": 20002,
+  "quantity": 1
+ },
+ "117": {
+  "definition": 20003,
+  "quantity": 1
+ },
+ "118": {
+  "definition": 20004,
+  "quantity": 1
+ },
+ "119": {
+  "definition": 20005,
+  "quantity": 1
+ },
+ "120": {
+  "definition": 20006,
+  "quantity": 1
+ },
+ "121": {
+  "definition": 20007,
+  "quantity": 1
+ },
+ "122": {
+  "definition": 20008,
+  "quantity": 1
+ },
+ "123": {
+  "definition": 20010,
+  "quantity": 1
+ },
+ "124": {
+  "definition": 20011,
+  "quantity": 1
+ },
+ "125": {
+  "definition": 20012,
+  "quantity": 1
+ },
+ "126": {
+  "definition": 20013,
+  "quantity": 1
+ },
+ "127": {
+  "definition": 20019,
+  "quantity": 1
+ },
+ "128": {
+  "definition": 20036,
+  "quantity": 1
+ },
+ "129": {
+  "definition": 20037,
+  "quantity": 1
+ },
+ "130": {
+  "definition": 20043,
+  "quantity": 1
+ },
+ "131": {
+  "definition": 20048,
+  "quantity": 1
+ },
+ "132": {
+  "definition": 21001,
+  "quantity": 1
+ },
+ "133": {
+  "definition": 21002,
+  "quantity": 1
+ },
+ "134": {
+  "definition": 21003,
+  "quantity": 1
+ },
+ "135": {
+  "definition": 21004,
+  "quantity": 1
+ },
+ "136": {
+  "definition": 21005,
+  "quantity": 1
+ },
+ "137": {
+  "definition": 21006,
+  "quantity": 1
+ },
+ "138": {
+  "definition": 21007,
+  "quantity": 1
+ },
+ "139": {
+  "definition": 21008,
+  "quantity": 1
+ },
+ "140": {
+  "definition": 21010,
+  "quantity": 1
+ },
+ "141": {
+  "definition": 21011,
+  "quantity": 1
+ },
+ "142": {
+  "definition": 21012,
+  "quantity": 1
+ },
+ "143": {
+  "definition": 21013,
+  "quantity": 1
+ },
+ "144": {
+  "definition": 21021,
+  "quantity": 1
+ },
+ "145": {
+  "definition": 21028,
+  "quantity": 1
+ },
+ "146": {
+  "definition": 21043,
+  "quantity": 1
+ },
+ "147": {
+  "definition": 22001,
+  "quantity": 1
+ },
+ "148": {
+  "definition": 22002,
+  "quantity": 1
+ },
+ "149": {
+  "definition": 22003,
+  "quantity": 1
+ },
+ "150": {
+  "definition": 22004,
+  "quantity": 1
+ },
+ "151": {
+  "definition": 22005,
+  "quantity": 1
+ },
+ "152": {
+  "definition": 22006,
+  "quantity": 1
+ },
+ "153": {
+  "definition": 22007,
+  "quantity": 1
+ },
+ "154": {
+  "definition": 22008,
+  "quantity": 1
+ },
+ "155": {
+  "definition": 22010,
+  "quantity": 1
+ },
+ "156": {
+  "definition": 22011,
+  "quantity": 1
+ },
+ "157": {
+  "definition": 22012,
+  "quantity": 1
+ },
+ "158": {
+  "definition": 22013,
+  "quantity": 1
+ },
+ "159": {
+  "definition": 22028,
+  "quantity": 1
+ },
+ "160": {
+  "definition": 22043,
+  "quantity": 1
+ },
+ "161": {
+  "definition": 23001,
+  "quantity": 1
+ },
+ "162": {
+  "definition": 23002,
+  "quantity": 1
+ },
+ "163": {
+  "definition": 23003,
+  "quantity": 1
+ },
+ "164": {
+  "definition": 23004,
+  "quantity": 1
+ },
+ "165": {
+  "definition": 23005,
+  "quantity": 1
+ },
+ "166": {
+  "definition": 23006,
+  "quantity": 1
+ },
+ "167": {
+  "definition": 23007,
+  "quantity": 1
+ },
+ "168": {
+  "definition": 23008,
+  "quantity": 1
+ },
+ "169": {
+  "definition": 23009,
+  "quantity": 1
+ },
+ "170": {
+  "definition": 23010,
+  "quantity": 1
+ },
+ "171": {
+  "definition": 23011,
+  "quantity": 1
+ },
+ "172": {
+  "definition": 23012,
+  "quantity": 1
+ },
+ "173": {
+  "definition": 23013,
+  "quantity": 1
+ },
+ "174": {
+  "definition": 23030,
+  "quantity": 1
+ },
+ "175": {
+  "definition": 23043,
+  "quantity": 1
+ },
+ "176": {
+  "definition": 24001,
+  "quantity": 1
+ },
+ "177": {
+  "definition": 24002,
+  "quantity": 1
+ },
+ "178": {
+  "definition": 24003,
+  "quantity": 1
+ },
+ "179": {
+  "definition": 24004,
+  "quantity": 1
+ },
+ "180": {
+  "definition": 24005,
+  "quantity": 1
+ },
+ "181": {
+  "definition": 24006,
+  "quantity": 1
+ },
+ "182": {
+  "definition": 24007,
+  "quantity": 1
+ },
+ "183": {
+  "definition": 24008,
+  "quantity": 1
+ },
+ "184": {
+  "definition": 24010,
+  "quantity": 1
+ },
+ "185": {
+  "definition": 24011,
+  "quantity": 1
+ },
+ "186": {
+  "definition": 24012,
+  "quantity": 1
+ },
+ "187": {
+  "definition": 24013,
+  "quantity": 1
+ },
+ "188": {
+  "definition": 24019,
+  "quantity": 1
+ },
+ "189": {
+  "definition": 24029,
+  "quantity": 1
+ },
+ "190": {
+  "definition": 24043,
+  "quantity": 1
+ },
+ "191": {
+  "definition": 25001,
+  "quantity": 1
+ },
+ "192": {
+  "definition": 25002,
+  "quantity": 1
+ },
+ "193": {
+  "definition": 25003,
+  "quantity": 1
+ },
+ "194": {
+  "definition": 25004,
+  "quantity": 1
+ },
+ "195": {
+  "definition": 25005,
+  "quantity": 1
+ },
+ "196": {
+  "definition": 25006,
+  "quantity": 1
+ },
+ "197": {
+  "definition": 25007,
+  "quantity": 1
+ },
+ "198": {
+  "definition": 25008,
+  "quantity": 1
+ },
+ "199": {
+  "definition": 25010,
+  "quantity": 1
+ },
+ "200": {
+  "definition": 25011,
+  "quantity": 1
+ },
+ "201": {
+  "definition": 25012,
+  "quantity": 1
+ },
+ "202": {
+  "definition": 25013,
+  "quantity": 1
+ },
+ "203": {
+  "definition": 25014,
+  "quantity": 1
+ },
+ "204": {
+  "definition": 25018,
+  "quantity": 1
+ },
+ "205": {
+  "definition": 25019,
+  "quantity": 1
+ },
+ "206": {
+  "definition": 25043,
+  "quantity": 1
+ },
+ "207": {
+  "definition": 26001,
+  "quantity": 1
+ },
+ "208": {
+  "definition": 26002,
+  "quantity": 1
+ },
+ "209": {
+  "definition": 26003,
+  "quantity": 1
+ },
+ "210": {
+  "definition": 26004,
+  "quantity": 1
+ },
+ "211": {
+  "definition": 26005,
+  "quantity": 1
+ },
+ "212": {
+  "definition": 26006,
+  "quantity": 1
+ },
+ "213": {
+  "definition": 26007,
+  "quantity": 1
+ },
+ "214": {
+  "definition": 26008,
+  "quantity": 1
+ },
+ "215": {
+  "definition": 26010,
+  "quantity": 1
+ },
+ "216": {
+  "definition": 26011,
+  "quantity": 1
+ },
+ "217": {
+  "definition": 26012,
+  "quantity": 1
+ },
+ "218": {
+  "definition": 26013,
+  "quantity": 1
+ },
+ "219": {
+  "definition": 26025,
+  "quantity": 1
+ },
+ "220": {
+  "definition": 26043,
+  "quantity": 1
+ },
+ "221": {
+  "definition": 27001,
+  "quantity": 1
+ },
+ "222": {
+  "definition": 27002,
+  "quantity": 1
+ },
+ "223": {
+  "definition": 27003,
+  "quantity": 1
+ },
+ "224": {
+  "definition": 27004,
+  "quantity": 1
+ },
+ "225": {
+  "definition": 27005,
+  "quantity": 1
+ },
+ "226": {
+  "definition": 27006,
+  "quantity": 1
+ },
+ "227": {
+  "definition": 27007,
+  "quantity": 1
+ },
+ "228": {
+  "definition": 27008,
+  "quantity": 1
+ },
+ "229": {
+  "definition": 27009,
+  "quantity": 1
+ },
+ "230": {
+  "definition": 27010,
+  "quantity": 1
+ },
+ "231": {
+  "definition": 27011,
+  "quantity": 1
+ },
+ "232": {
+  "definition": 27012,
+  "quantity": 1
+ },
+ "233": {
+  "definition": 27013,
+  "quantity": 1
+ },
+ "234": {
+  "definition": 27014,
+  "quantity": 1
+ },
+ "235": {
+  "definition": 27043,
+  "quantity": 1
+ },
+ "236": {
+  "definition": 28001,
+  "quantity": 1
+ },
+ "237": {
+  "definition": 28002,
+  "quantity": 1
+ },
+ "238": {
+  "definition": 28003,
+  "quantity": 1
+ },
+ "239": {
+  "definition": 28004,
+  "quantity": 1
+ },
+ "240": {
+  "definition": 28005,
+  "quantity": 1
+ },
+ "241": {
+  "definition": 28006,
+  "quantity": 1
+ },
+ "242": {
+  "definition": 28007,
+  "quantity": 1
+ },
+ "243": {
+  "definition": 28008,
+  "quantity": 1
+ },
+ "244": {
+  "definition": 28009,
+  "quantity": 1
+ },
+ "245": {
+  "definition": 28010,
+  "quantity": 1
+ },
+ "246": {
+  "definition": 28011,
+  "quantity": 1
+ },
+ "247": {
+  "definition": 28012,
+  "quantity": 1
+ },
+ "248": {
+  "definition": 28013,
+  "quantity": 1
+ },
+ "249": {
+  "definition": 28021,
+  "quantity": 1
+ },
+ "250": {
+  "definition": 28043,
+  "quantity": 1
+ },
+ "251": {
+  "definition": 28046,
+  "quantity": 1
+ },
+ "252": {
+  "definition": 29001,
+  "quantity": 1
+ },
+ "253": {
+  "definition": 29002,
+  "quantity": 1
+ },
+ "254": {
+  "definition": 29003,
+  "quantity": 1
+ },
+ "255": {
+  "definition": 29004,
+  "quantity": 1
+ },
+ "256": {
+  "definition": 29005,
+  "quantity": 1
+ },
+ "257": {
+  "definition": 29006,
+  "quantity": 1
+ },
+ "258": {
+  "definition": 29007,
+  "quantity": 1
+ },
+ "259": {
+  "definition": 29008,
+  "quantity": 1
+ },
+ "260": {
+  "definition": 29010,
+  "quantity": 1
+ },
+ "261": {
+  "definition": 29011,
+  "quantity": 1
+ },
+ "262": {
+  "definition": 29012,
+  "quantity": 1
+ },
+ "263": {
+  "definition": 29013,
+  "quantity": 1
+ },
+ "264": {
+  "definition": 29021,
+  "quantity": 1
+ },
+ "265": {
+  "definition": 29043,
+  "quantity": 1
+ },
+ "266": {
+  "definition": 30001,
+  "quantity": 1
+ },
+ "267": {
+  "definition": 30002,
+  "quantity": 1
+ },
+ "268": {
+  "definition": 30003,
+  "quantity": 1
+ },
+ "269": {
+  "definition": 30004,
+  "quantity": 1
+ },
+ "270": {
+  "definition": 30005,
+  "quantity": 1
+ },
+ "271": {
+  "definition": 30006,
+  "quantity": 1
+ },
+ "272": {
+  "definition": 30007,
+  "quantity": 1
+ },
+ "273": {
+  "definition": 30008,
+  "quantity": 1
+ },
+ "274": {
+  "definition": 30010,
+  "quantity": 1
+ },
+ "275": {
+  "definition": 30011,
+  "quantity": 1
+ },
+ "276": {
+  "definition": 30012,
+  "quantity": 1
+ },
+ "277": {
+  "definition": 30013,
+  "quantity": 1
+ },
+ "278": {
+  "definition": 30025,
+  "quantity": 1
+ },
+ "279": {
+  "definition": 30043,
+  "quantity": 1
+ },
+ "280": {
+  "definition": 31001,
+  "quantity": 1
+ },
+ "281": {
+  "definition": 31002,
+  "quantity": 1
+ },
+ "282": {
+  "definition": 31003,
+  "quantity": 1
+ },
+ "283": {
+  "definition": 31004,
+  "quantity": 1
+ },
+ "284": {
+  "definition": 31005,
+  "quantity": 1
+ },
+ "285": {
+  "definition": 31006,
+  "quantity": 1
+ },
+ "286": {
+  "definition": 31007,
+  "quantity": 1
+ },
+ "287": {
+  "definition": 31008,
+  "quantity": 1
+ },
+ "288": {
+  "definition": 31010,
+  "quantity": 1
+ },
+ "289": {
+  "definition": 31011,
+  "quantity": 1
+ },
+ "290": {
+  "definition": 31012,
+  "quantity": 1
+ },
+ "291": {
+  "definition": 31013,
+  "quantity": 1
+ },
+ "292": {
+  "definition": 31015,
+  "quantity": 1
+ },
+ "293": {
+  "definition": 31016,
+  "quantity": 1
+ },
+ "294": {
+  "definition": 31019,
+  "quantity": 1
+ },
+ "295": {
+  "definition": 31043,
+  "quantity": 1
+ },
+ "296": {
+  "definition": 32001,
+  "quantity": 1
+ },
+ "297": {
+  "definition": 32002,
+  "quantity": 1
+ },
+ "298": {
+  "definition": 32003,
+  "quantity": 1
+ },
+ "299": {
+  "definition": 32004,
+  "quantity": 1
+ },
+ "300": {
+  "definition": 32005,
+  "quantity": 1
+ },
+ "301": {
+  "definition": 32006,
+  "quantity": 1
+ },
+ "302": {
+  "definition": 32007,
+  "quantity": 1
+ },
+ "303": {
+  "definition": 32008,
+  "quantity": 1
+ },
+ "304": {
+  "definition": 32009,
+  "quantity": 1
+ },
+ "305": {
+  "definition": 32010,
+  "quantity": 1
+ },
+ "306": {
+  "definition": 32011,
+  "quantity": 1
+ },
+ "307": {
+  "definition": 32012,
+  "quantity": 1
+ },
+ "308": {
+  "definition": 32013,
+  "quantity": 1
+ },
+ "309": {
+  "definition": 32015,
+  "quantity": 1
+ },
+ "310": {
+  "definition": 32016,
+  "quantity": 1
+ },
+ "311": {
+  "definition": 32043,
+  "quantity": 1
+ },
+ "312": {
+  "definition": 32047,
+  "quantity": 1
+ },
+ "313": {
+  "definition": 33004,
+  "quantity": 1
+ },
+ "314": {
+  "definition": 34001,
+  "quantity": 1
+ },
+ "315": {
+  "definition": 34002,
+  "quantity": 1
+ },
+ "316": {
+  "definition": 34003,
+  "quantity": 1
+ },
+ "317": {
+  "definition": 34004,
+  "quantity": 1
+ },
+ "318": {
+  "definition": 34005,
+  "quantity": 1
+ },
+ "319": {
+  "definition": 34006,
+  "quantity": 1
+ },
+ "320": {
+  "definition": 34007,
+  "quantity": 1
+ },
+ "321": {
+  "definition": 34008,
+  "quantity": 1
+ },
+ "322": {
+  "definition": 34010,
+  "quantity": 1
+ },
+ "323": {
+  "definition": 34011,
+  "quantity": 1
+ },
+ "324": {
+  "definition": 34012,
+  "quantity": 1
+ },
+ "325": {
+  "definition": 34013,
+  "quantity": 1
+ },
+ "326": {
+  "definition": 34014,
+  "quantity": 1
+ },
+ "327": {
+  "definition": 34019,
+  "quantity": 1
+ },
+ "328": {
+  "definition": 34021,
+  "quantity": 1
+ },
+ "329": {
+  "definition": 34043,
+  "quantity": 1
+ },
+ "330": {
+  "definition": 35001,
+  "quantity": 1
+ },
+ "331": {
+  "definition": 35002,
+  "quantity": 1
+ },
+ "332": {
+  "definition": 35003,
+  "quantity": 1
+ },
+ "333": {
+  "definition": 35004,
+  "quantity": 1
+ },
+ "334": {
+  "definition": 35005,
+  "quantity": 1
+ },
+ "335": {
+  "definition": 35006,
+  "quantity": 1
+ },
+ "336": {
+  "definition": 35007,
+  "quantity": 1
+ },
+ "337": {
+  "definition": 35008,
+  "quantity": 1
+ },
+ "338": {
+  "definition": 35009,
+  "quantity": 1
+ },
+ "339": {
+  "definition": 35010,
+  "quantity": 1
+ },
+ "340": {
+  "definition": 35011,
+  "quantity": 1
+ },
+ "341": {
+  "definition": 35012,
+  "quantity": 1
+ },
+ "342": {
+  "definition": 35013,
+  "quantity": 1
+ },
+ "343": {
+  "definition": 35043,
+  "quantity": 1
+ },
+ "344": {
+  "definition": 35047,
+  "quantity": 1
+ },
+ "345": {
+  "definition": 36004,
+  "quantity": 1
+ },
+ "346": {
+  "definition": 37001,
+  "quantity": 1
+ },
+ "347": {
+  "definition": 38001,
+  "quantity": 1
+ },
+ "348": {
+  "definition": 38002,
+  "quantity": 1
+ },
+ "349": {
+  "definition": 38003,
+  "quantity": 1
+ },
+ "350": {
+  "definition": 38004,
+  "quantity": 1
+ },
+ "351": {
+  "definition": 38005,
+  "quantity": 1
+ },
+ "352": {
+  "definition": 38006,
+  "quantity": 1
+ },
+ "353": {
+  "definition": 38007,
+  "quantity": 1
+ },
+ "354": {
+  "definition": 38008,
+  "quantity": 1
+ },
+ "355": {
+  "definition": 38010,
+  "quantity": 1
+ },
+ "356": {
+  "definition": 38011,
+  "quantity": 1
+ },
+ "357": {
+  "definition": 38012,
+  "quantity": 1
+ },
+ "358": {
+  "definition": 38013,
+  "quantity": 1
+ },
+ "359": {
+  "definition": 38043,
+  "quantity": 1
+ },
+ "360": {
+  "definition": 39001,
+  "quantity": 1
+ },
+ "361": {
+  "definition": 41009,
+  "quantity": 1
+ },
+ "362": {
+  "definition": 43001,
+  "quantity": 1
+ },
+ "363": {
+  "definition": 43002,
+  "quantity": 1
+ },
+ "364": {
+  "definition": 43003,
+  "quantity": 1
+ },
+ "365": {
+  "definition": 43004,
+  "quantity": 1
+ },
+ "366": {
+  "definition": 43005,
+  "quantity": 1
+ },
+ "367": {
+  "definition": 43006,
+  "quantity": 1
+ },
+ "368": {
+  "definition": 43007,
+  "quantity": 1
+ },
+ "369": {
+  "definition": 43008,
+  "quantity": 1
+ },
+ "370": {
+  "definition": 43010,
+  "quantity": 1
+ },
+ "371": {
+  "definition": 43011,
+  "quantity": 1
+ },
+ "372": {
+  "definition": 43012,
+  "quantity": 1
+ },
+ "373": {
+  "definition": 43013,
+  "quantity": 1
+ },
+ "374": {
+  "definition": 43019,
+  "quantity": 1
+ },
+ "375": {
+  "definition": 43043,
+  "quantity": 1
+ },
+ "376": {
+  "definition": 43048,
+  "quantity": 1
+ },
+ "377": {
+  "definition": 44013,
+  "quantity": 1
+ },
+ "378": {
+  "definition": 45001,
+  "quantity": 1
+ },
+ "379": {
+  "definition": 45002,
+  "quantity": 1
+ },
+ "380": {
+  "definition": 45003,
+  "quantity": 1
+ },
+ "381": {
+  "definition": 45004,
+  "quantity": 1
+ },
+ "382": {
+  "definition": 45005,
+  "quantity": 1
+ },
+ "383": {
+  "definition": 45006,
+  "quantity": 1
+ },
+ "384": {
+  "definition": 45007,
+  "quantity": 1
+ },
+ "385": {
+  "definition": 45008,
+  "quantity": 1
+ },
+ "386": {
+  "definition": 45009,
+  "quantity": 1
+ },
+ "387": {
+  "definition": 45010,
+  "quantity": 1
+ },
+ "388": {
+  "definition": 45011,
+  "quantity": 1
+ },
+ "389": {
+  "definition": 45012,
+  "quantity": 1
+ },
+ "390": {
+  "definition": 45013,
+  "quantity": 1
+ },
+ "391": {
+  "definition": 45015,
+  "quantity": 1
+ },
+ "392": {
+  "definition": 45043,
+  "quantity": 1
+ },
+ "393": {
+  "definition": 45049,
+  "quantity": 1
+ },
+ "394": {
+  "definition": 46001,
+  "quantity": 1
+ },
+ "395": {
+  "definition": 46002,
+  "quantity": 1
+ },
+ "396": {
+  "definition": 46003,
+  "quantity": 1
+ },
+ "397": {
+  "definition": 46004,
+  "quantity": 1
+ },
+ "398": {
+  "definition": 46005,
+  "quantity": 1
+ },
+ "399": {
+  "definition": 46006,
+  "quantity": 1
+ },
+ "400": {
+  "definition": 46007,
+  "quantity": 1
+ },
+ "401": {
+  "definition": 46008,
+  "quantity": 1
+ },
+ "402": {
+  "definition": 46010,
+  "quantity": 1
+ },
+ "403": {
+  "definition": 46011,
+  "quantity": 1
+ },
+ "404": {
+  "definition": 46012,
+  "quantity": 1
+ },
+ "405": {
+  "definition": 46013,
+  "quantity": 1
+ },
+ "406": {
+  "definition": 46015,
+  "quantity": 1
+ },
+ "407": {
+  "definition": 46025,
+  "quantity": 1
+ },
+ "408": {
+  "definition": 46043,
+  "quantity": 1
+ },
+ "409": {
+  "definition": 48001,
+  "quantity": 1
+ },
+ "410": {
+  "definition": 48002,
+  "quantity": 1
+ },
+ "411": {
+  "definition": 48003,
+  "quantity": 1
+ },
+ "412": {
+  "definition": 48004,
+  "quantity": 1
+ },
+ "413": {
+  "definition": 48005,
+  "quantity": 1
+ },
+ "414": {
+  "definition": 48006,
+  "quantity": 1
+ },
+ "415": {
+  "definition": 48007,
+  "quantity": 1
+ },
+ "416": {
+  "definition": 48008,
+  "quantity": 1
+ },
+ "417": {
+  "definition": 48009,
+  "quantity": 1
+ },
+ "418": {
+  "definition": 48010,
+  "quantity": 1
+ },
+ "419": {
+  "definition": 48011,
+  "quantity": 1
+ },
+ "420": {
+  "definition": 48012,
+  "quantity": 1
+ },
+ "421": {
+  "definition": 48013,
+  "quantity": 1
+ },
+ "422": {
+  "definition": 48017,
+  "quantity": 1
+ },
+ "423": {
+  "definition": 48043,
+  "quantity": 1
+ },
+ "424": {
+  "definition": 49001,
+  "quantity": 1
+ },
+ "425": {
+  "definition": 49002,
+  "quantity": 1
+ },
+ "426": {
+  "definition": 49003,
+  "quantity": 1
+ },
+ "427": {
+  "definition": 49004,
+  "quantity": 1
+ },
+ "428": {
+  "definition": 49005,
+  "quantity": 1
+ },
+ "429": {
+  "definition": 49006,
+  "quantity": 1
+ },
+ "430": {
+  "definition": 49007,
+  "quantity": 1
+ },
+ "431": {
+  "definition": 49008,
+  "quantity": 1
+ },
+ "432": {
+  "definition": 49010,
+  "quantity": 1
+ },
+ "433": {
+  "definition": 49011,
+  "quantity": 1
+ },
+ "434": {
+  "definition": 49012,
+  "quantity": 1
+ },
+ "435": {
+  "definition": 49013,
+  "quantity": 1
+ },
+ "436": {
+  "definition": 49014,
+  "quantity": 1
+ },
+ "437": {
+  "definition": 49018,
+  "quantity": 1
+ },
+ "438": {
+  "definition": 49019,
+  "quantity": 1
+ },
+ "439": {
+  "definition": 49027,
+  "quantity": 1
+ },
+ "440": {
+  "definition": 49043,
+  "quantity": 1
+ },
+ "441": {
+  "definition": 49049,
+  "quantity": 1
+ },
+ "442": {
+  "definition": 50001,
+  "quantity": 1
+ },
+ "443": {
+  "definition": 50002,
+  "quantity": 1
+ },
+ "444": {
+  "definition": 50003,
+  "quantity": 1
+ },
+ "445": {
+  "definition": 50004,
+  "quantity": 1
+ },
+ "446": {
+  "definition": 50005,
+  "quantity": 1
+ },
+ "447": {
+  "definition": 50006,
+  "quantity": 1
+ },
+ "448": {
+  "definition": 50007,
+  "quantity": 1
+ },
+ "449": {
+  "definition": 50008,
+  "quantity": 1
+ },
+ "450": {
+  "definition": 50009,
+  "quantity": 1
+ },
+ "451": {
+  "definition": 50010,
+  "quantity": 1
+ },
+ "452": {
+  "definition": 50011,
+  "quantity": 1
+ },
+ "453": {
+  "definition": 50012,
+  "quantity": 1
+ },
+ "454": {
+  "definition": 50013,
+  "quantity": 1
+ },
+ "455": {
+  "definition": 50014,
+  "quantity": 1
+ },
+ "456": {
+  "definition": 50018,
+  "quantity": 1
+ },
+ "457": {
+  "definition": 50027,
+  "quantity": 1
+ },
+ "458": {
+  "definition": 50043,
+  "quantity": 1
+ },
+ "459": {
+  "definition": 51001,
+  "quantity": 1
+ },
+ "460": {
+  "definition": 51002,
+  "quantity": 1
+ },
+ "461": {
+  "definition": 51003,
+  "quantity": 1
+ },
+ "462": {
+  "definition": 51004,
+  "quantity": 1
+ },
+ "463": {
+  "definition": 51005,
+  "quantity": 1
+ },
+ "464": {
+  "definition": 51006,
+  "quantity": 1
+ },
+ "465": {
+  "definition": 51007,
+  "quantity": 1
+ },
+ "466": {
+  "definition": 51008,
+  "quantity": 1
+ },
+ "467": {
+  "definition": 51009,
+  "quantity": 1
+ },
+ "468": {
+  "definition": 51010,
+  "quantity": 1
+ },
+ "469": {
+  "definition": 51011,
+  "quantity": 1
+ },
+ "470": {
+  "definition": 51012,
+  "quantity": 1
+ },
+ "471": {
+  "definition": 51013,
+  "quantity": 1
+ },
+ "472": {
+  "definition": 51014,
+  "quantity": 1
+ },
+ "473": {
+  "definition": 51018,
+  "quantity": 1
+ },
+ "474": {
+  "definition": 51027,
+  "quantity": 1
+ },
+ "475": {
+  "definition": 51043,
+  "quantity": 1
+ },
+ "476": {
+  "definition": 52001,
+  "quantity": 1
+ },
+ "477": {
+  "definition": 52002,
+  "quantity": 1
+ },
+ "478": {
+  "definition": 52003,
+  "quantity": 1
+ },
+ "479": {
+  "definition": 52004,
+  "quantity": 1
+ },
+ "480": {
+  "definition": 52005,
+  "quantity": 1
+ },
+ "481": {
+  "definition": 52006,
+  "quantity": 1
+ },
+ "482": {
+  "definition": 52007,
+  "quantity": 1
+ },
+ "483": {
+  "definition": 52008,
+  "quantity": 1
+ },
+ "484": {
+  "definition": 52009,
+  "quantity": 1
+ },
+ "485": {
+  "definition": 52010,
+  "quantity": 1
+ },
+ "486": {
+  "definition": 52011,
+  "quantity": 1
+ },
+ "487": {
+  "definition": 52012,
+  "quantity": 1
+ },
+ "488": {
+  "definition": 52013,
+  "quantity": 1
+ },
+ "489": {
+  "definition": 52014,
+  "quantity": 1
+ },
+ "490": {
+  "definition": 52018,
+  "quantity": 1
+ },
+ "491": {
+  "definition": 52021,
+  "quantity": 1
+ },
+ "492": {
+  "definition": 52027,
+  "quantity": 1
+ },
+ "493": {
+  "definition": 52043,
+  "quantity": 1
+ },
+ "494": {
+  "definition": 53001,
+  "quantity": 1
+ },
+ "495": {
+  "definition": 53002,
+  "quantity": 1
+ },
+ "496": {
+  "definition": 53003,
+  "quantity": 1
+ },
+ "497": {
+  "definition": 53004,
+  "quantity": 1
+ },
+ "498": {
+  "definition": 53005,
+  "quantity": 1
+ },
+ "499": {
+  "definition": 53006,
+  "quantity": 1
+ },
+ "500": {
+  "definition": 53007,
+  "quantity": 1
+ },
+ "501": {
+  "definition": 53008,
+  "quantity": 1
+ },
+ "502": {
+  "definition": 53009,
+  "quantity": 1
+ },
+ "503": {
+  "definition": 53010,
+  "quantity": 1
+ },
+ "504": {
+  "definition": 53011,
+  "quantity": 1
+ },
+ "505": {
+  "definition": 53012,
+  "quantity": 1
+ },
+ "506": {
+  "definition": 53013,
+  "quantity": 1
+ },
+ "507": {
+  "definition": 53014,
+  "quantity": 1
+ },
+ "508": {
+  "definition": 53018,
+  "quantity": 1
+ },
+ "509": {
+  "definition": 53027,
+  "quantity": 1
+ },
+ "510": {
+  "definition": 53043,
+  "quantity": 1
+ },
+ "511": {
+  "definition": 54001,
+  "quantity": 1
+ },
+ "512": {
+  "definition": 54002,
+  "quantity": 1
+ },
+ "513": {
+  "definition": 54003,
+  "quantity": 1
+ },
+ "514": {
+  "definition": 54004,
+  "quantity": 1
+ },
+ "515": {
+  "definition": 54005,
+  "quantity": 1
+ },
+ "516": {
+  "definition": 54006,
+  "quantity": 1
+ },
+ "517": {
+  "definition": 54007,
+  "quantity": 1
+ },
+ "518": {
+  "definition": 54008,
+  "quantity": 1
+ },
+ "519": {
+  "definition": 54010,
+  "quantity": 1
+ },
+ "520": {
+  "definition": 54011,
+  "quantity": 1
+ },
+ "521": {
+  "definition": 54012,
+  "quantity": 1
+ },
+ "522": {
+  "definition": 54013,
+  "quantity": 1
+ },
+ "523": {
+  "definition": 54019,
+  "quantity": 1
+ },
+ "524": {
+  "definition": 54029,
+  "quantity": 1
+ },
+ "525": {
+  "definition": 54043,
+  "quantity": 1
+ },
+ "526": {
+  "definition": 55001,
+  "quantity": 1
+ },
+ "527": {
+  "definition": 55002,
+  "quantity": 1
+ },
+ "528": {
+  "definition": 55003,
+  "quantity": 1
+ },
+ "529": {
+  "definition": 55004,
+  "quantity": 1
+ },
+ "530": {
+  "definition": 55005,
+  "quantity": 1
+ },
+ "531": {
+  "definition": 55006,
+  "quantity": 1
+ },
+ "532": {
+  "definition": 55007,
+  "quantity": 1
+ },
+ "533": {
+  "definition": 55008,
+  "quantity": 1
+ },
+ "534": {
+  "definition": 55010,
+  "quantity": 1
+ },
+ "535": {
+  "definition": 55011,
+  "quantity": 1
+ },
+ "536": {
+  "definition": 55012,
+  "quantity": 1
+ },
+ "537": {
+  "definition": 55013,
+  "quantity": 1
+ },
+ "538": {
+  "definition": 55019,
+  "quantity": 1
+ },
+ "539": {
+  "definition": 55043,
+  "quantity": 1
+ },
+ "540": {
+  "definition": 55049,
+  "quantity": 1
+ },
+ "541": {
+  "definition": 56001,
+  "quantity": 1
+ },
+ "542": {
+  "definition": 56002,
+  "quantity": 1
+ },
+ "543": {
+  "definition": 56003,
+  "quantity": 1
+ },
+ "544": {
+  "definition": 56004,
+  "quantity": 1
+ },
+ "545": {
+  "definition": 56005,
+  "quantity": 1
+ },
+ "546": {
+  "definition": 56006,
+  "quantity": 1
+ },
+ "547": {
+  "definition": 56007,
+  "quantity": 1
+ },
+ "548": {
+  "definition": 56008,
+  "quantity": 1
+ },
+ "549": {
+  "definition": 56009,
+  "quantity": 1
+ },
+ "550": {
+  "definition": 56010,
+  "quantity": 1
+ },
+ "551": {
+  "definition": 56011,
+  "quantity": 1
+ },
+ "552": {
+  "definition": 56012,
+  "quantity": 1
+ },
+ "553": {
+  "definition": 56013,
+  "quantity": 1
+ },
+ "554": {
+  "definition": 56043,
+  "quantity": 1
+ },
+ "555": {
+  "definition": 56047,
+  "quantity": 1
+ },
+ "556": {
+  "definition": 57001,
+  "quantity": 1
+ },
+ "557": {
+  "definition": 57002,
+  "quantity": 1
+ },
+ "558": {
+  "definition": 57003,
+  "quantity": 1
+ },
+ "559": {
+  "definition": 57004,
+  "quantity": 1
+ },
+ "560": {
+  "definition": 57005,
+  "quantity": 1
+ },
+ "561": {
+  "definition": 57006,
+  "quantity": 1
+ },
+ "562": {
+  "definition": 57007,
+  "quantity": 1
+ },
+ "563": {
+  "definition": 57008,
+  "quantity": 1
+ },
+ "564": {
+  "definition": 57010,
+  "quantity": 1
+ },
+ "565": {
+  "definition": 57011,
+  "quantity": 1
+ },
+ "566": {
+  "definition": 57012,
+  "quantity": 1
+ },
+ "567": {
+  "definition": 57013,
+  "quantity": 1
+ },
+ "568": {
+  "definition": 57019,
+  "quantity": 1
+ },
+ "569": {
+  "definition": 57029,
+  "quantity": 1
+ },
+ "570": {
+  "definition": 57043,
+  "quantity": 1
+ },
+ "571": {
+  "definition": 58001,
+  "quantity": 1
+ },
+ "572": {
+  "definition": 58002,
+  "quantity": 1
+ },
+ "573": {
+  "definition": 58003,
+  "quantity": 1
+ },
+ "574": {
+  "definition": 58004,
+  "quantity": 1
+ },
+ "575": {
+  "definition": 58005,
+  "quantity": 1
+ },
+ "576": {
+  "definition": 58006,
+  "quantity": 1
+ },
+ "577": {
+  "definition": 58007,
+  "quantity": 1
+ },
+ "578": {
+  "definition": 58008,
+  "quantity": 1
+ },
+ "579": {
+  "definition": 58009,
+  "quantity": 1
+ },
+ "580": {
+  "definition": 58010,
+  "quantity": 1
+ },
+ "581": {
+  "definition": 58011,
+  "quantity": 1
+ },
+ "582": {
+  "definition": 58012,
+  "quantity": 1
+ },
+ "583": {
+  "definition": 58013,
+  "quantity": 1
+ },
+ "584": {
+  "definition": 58043,
+  "quantity": 1
+ },
+ "585": {
+  "definition": 58046,
+  "quantity": 1
+ },
+ "586": {
+  "definition": 59001,
+  "quantity": 1
+ },
+ "587": {
+  "definition": 59002,
+  "quantity": 1
+ },
+ "588": {
+  "definition": 59003,
+  "quantity": 1
+ },
+ "589": {
+  "definition": 59004,
+  "quantity": 1
+ },
+ "590": {
+  "definition": 59005,
+  "quantity": 1
+ },
+ "591": {
+  "definition": 59006,
+  "quantity": 1
+ },
+ "592": {
+  "definition": 59007,
+  "quantity": 1
+ },
+ "593": {
+  "definition": 59008,
+  "quantity": 1
+ },
+ "594": {
+  "definition": 59009,
+  "quantity": 1
+ },
+ "595": {
+  "definition": 59010,
+  "quantity": 1
+ },
+ "596": {
+  "definition": 59011,
+  "quantity": 1
+ },
+ "597": {
+  "definition": 59012,
+  "quantity": 1
+ },
+ "598": {
+  "definition": 59013,
+  "quantity": 1
+ },
+ "599": {
+  "definition": 59021,
+  "quantity": 1
+ },
+ "600": {
+  "definition": 59030,
+  "quantity": 1
+ },
+ "601": {
+  "definition": 59043,
+  "quantity": 1
+ },
+ "602": {
+  "definition": 59046,
+  "quantity": 1
+ },
+ "603": {
+  "definition": 61001,
+  "quantity": 1
+ },
+ "604": {
+  "definition": 61002,
+  "quantity": 1
+ },
+ "605": {
+  "definition": 61003,
+  "quantity": 1
+ },
+ "606": {
+  "definition": 61004,
+  "quantity": 1
+ },
+ "607": {
+  "definition": 61005,
+  "quantity": 1
+ },
+ "608": {
+  "definition": 61006,
+  "quantity": 1
+ },
+ "609": {
+  "definition": 61007,
+  "quantity": 1
+ },
+ "610": {
+  "definition": 61008,
+  "quantity": 1
+ },
+ "611": {
+  "definition": 61009,
+  "quantity": 1
+ },
+ "612": {
+  "definition": 61010,
+  "quantity": 1
+ },
+ "613": {
+  "definition": 61011,
+  "quantity": 1
+ },
+ "614": {
+  "definition": 61012,
+  "quantity": 1
+ },
+ "615": {
+  "definition": 61013,
+  "quantity": 1
+ },
+ "616": {
+  "definition": 61043,
+  "quantity": 1
+ },
+ "617": {
+  "definition": 61046,
+  "quantity": 1
+ },
+ "618": {
+  "definition": 62001,
+  "quantity": 1
+ },
+ "619": {
+  "definition": 62002,
+  "quantity": 1
+ },
+ "620": {
+  "definition": 62003,
+  "quantity": 1
+ },
+ "621": {
+  "definition": 62004,
+  "quantity": 1
+ },
+ "622": {
+  "definition": 62005,
+  "quantity": 1
+ },
+ "623": {
+  "definition": 62006,
+  "quantity": 1
+ },
+ "624": {
+  "definition": 62007,
+  "quantity": 1
+ },
+ "625": {
+  "definition": 62008,
+  "quantity": 1
+ },
+ "626": {
+  "definition": 62009,
+  "quantity": 1
+ },
+ "627": {
+  "definition": 62010,
+  "quantity": 1
+ },
+ "628": {
+  "definition": 62011,
+  "quantity": 1
+ },
+ "629": {
+  "definition": 62012,
+  "quantity": 1
+ },
+ "630": {
+  "definition": 62013,
+  "quantity": 1
+ },
+ "631": {
+  "definition": 62016,
+  "quantity": 1
+ },
+ "632": {
+  "definition": 62018,
+  "quantity": 1
+ },
+ "633": {
+  "definition": 62043,
+  "quantity": 1
+ },
+ "634": {
+  "definition": 63001,
+  "quantity": 1
+ },
+ "635": {
+  "definition": 63002,
+  "quantity": 1
+ },
+ "636": {
+  "definition": 63003,
+  "quantity": 1
+ },
+ "637": {
+  "definition": 63004,
+  "quantity": 1
+ },
+ "638": {
+  "definition": 63005,
+  "quantity": 1
+ },
+ "639": {
+  "definition": 63006,
+  "quantity": 1
+ },
+ "640": {
+  "definition": 63007,
+  "quantity": 1
+ },
+ "641": {
+  "definition": 63008,
+  "quantity": 1
+ },
+ "642": {
+  "definition": 63009,
+  "quantity": 1
+ },
+ "643": {
+  "definition": 63010,
+  "quantity": 1
+ },
+ "644": {
+  "definition": 63011,
+  "quantity": 1
+ },
+ "645": {
+  "definition": 63012,
+  "quantity": 1
+ },
+ "646": {
+  "definition": 63013,
+  "quantity": 1
+ },
+ "647": {
+  "definition": 63016,
+  "quantity": 1
+ },
+ "648": {
+  "definition": 63018,
+  "quantity": 1
+ },
+ "649": {
+  "definition": 63030,
+  "quantity": 1
+ },
+ "650": {
+  "definition": 63043,
+  "quantity": 1
+ },
+ "651": {
+  "definition": 64006,
+  "quantity": 1
+ },
+ "652": {
+  "definition": 64016,
+  "quantity": 1
+ },
+ "653": {
+  "definition": 64051,
+  "quantity": 1
+ },
+ "654": {
+  "definition": 66001,
+  "quantity": 1
+ },
+ "655": {
+  "definition": 67009,
+  "quantity": 1
+ },
+ "656": {
+  "definition": 68001,
+  "quantity": 1
+ },
+ "657": {
+  "definition": 68002,
+  "quantity": 1
+ },
+ "658": {
+  "definition": 68003,
+  "quantity": 1
+ },
+ "659": {
+  "definition": 68004,
+  "quantity": 1
+ },
+ "660": {
+  "definition": 68005,
+  "quantity": 1
+ },
+ "661": {
+  "definition": 68006,
+  "quantity": 1
+ },
+ "662": {
+  "definition": 68007,
+  "quantity": 1
+ },
+ "663": {
+  "definition": 68008,
+  "quantity": 1
+ },
+ "664": {
+  "definition": 68010,
+  "quantity": 1
+ },
+ "665": {
+  "definition": 68011,
+  "quantity": 1
+ },
+ "666": {
+  "definition": 68012,
+  "quantity": 1
+ },
+ "667": {
+  "definition": 68013,
+  "quantity": 1
+ },
+ "668": {
+  "definition": 68025,
+  "quantity": 1
+ },
+ "669": {
+  "definition": 68043,
+  "quantity": 1
+ },
+ "670": {
+  "definition": 69001,
+  "quantity": 1
+ },
+ "671": {
+  "definition": 70001,
+  "quantity": 1
+ },
+ "672": {
+  "definition": 70002,
+  "quantity": 1
+ },
+ "673": {
+  "definition": 70003,
+  "quantity": 1
+ },
+ "674": {
+  "definition": 70004,
+  "quantity": 1
+ },
+ "675": {
+  "definition": 70005,
+  "quantity": 1
+ },
+ "676": {
+  "definition": 70006,
+  "quantity": 1
+ },
+ "677": {
+  "definition": 70007,
+  "quantity": 1
+ },
+ "678": {
+  "definition": 70008,
+  "quantity": 1
+ },
+ "679": {
+  "definition": 70009,
+  "quantity": 1
+ },
+ "680": {
+  "definition": 70010,
+  "quantity": 1
+ },
+ "681": {
+  "definition": 70011,
+  "quantity": 1
+ },
+ "682": {
+  "definition": 70012,
+  "quantity": 1
+ },
+ "683": {
+  "definition": 70013,
+  "quantity": 1
+ },
+ "684": {
+  "definition": 70043,
+  "quantity": 1
+ },
+ "685": {
+  "definition": 70046,
+  "quantity": 1
+ },
+ "686": {
+  "definition": 71001,
+  "quantity": 1
+ },
+ "687": {
+  "definition": 71002,
+  "quantity": 1
+ },
+ "688": {
+  "definition": 71003,
+  "quantity": 1
+ },
+ "689": {
+  "definition": 71004,
+  "quantity": 1
+ },
+ "690": {
+  "definition": 71005,
+  "quantity": 1
+ },
+ "691": {
+  "definition": 71006,
+  "quantity": 1
+ },
+ "692": {
+  "definition": 71007,
+  "quantity": 1
+ },
+ "693": {
+  "definition": 71008,
+  "quantity": 1
+ },
+ "694": {
+  "definition": 71010,
+  "quantity": 1
+ },
+ "695": {
+  "definition": 71011,
+  "quantity": 1
+ },
+ "696": {
+  "definition": 71012,
+  "quantity": 1
+ },
+ "697": {
+  "definition": 71013,
+  "quantity": 1
+ },
+ "698": {
+  "definition": 71015,
+  "quantity": 1
+ },
+ "699": {
+  "definition": 71016,
+  "quantity": 1
+ },
+ "700": {
+  "definition": 71019,
+  "quantity": 1
+ },
+ "701": {
+  "definition": 71043,
+  "quantity": 1
+ },
+ "702": {
+  "definition": 72004,
+  "quantity": 1
+ },
+ "703": {
+  "definition": 73001,
+  "quantity": 1
+ },
+ "704": {
+  "definition": 73002,
+  "quantity": 1
+ },
+ "705": {
+  "definition": 73003,
+  "quantity": 1
+ },
+ "706": {
+  "definition": 73004,
+  "quantity": 1
+ },
+ "707": {
+  "definition": 73005,
+  "quantity": 1
+ },
+ "708": {
+  "definition": 73006,
+  "quantity": 1
+ },
+ "709": {
+  "definition": 73007,
+  "quantity": 1
+ },
+ "710": {
+  "definition": 73008,
+  "quantity": 1
+ },
+ "711": {
+  "definition": 73010,
+  "quantity": 1
+ },
+ "712": {
+  "definition": 73011,
+  "quantity": 1
+ },
+ "713": {
+  "definition": 73012,
+  "quantity": 1
+ },
+ "714": {
+  "definition": 73013,
+  "quantity": 1
+ },
+ "715": {
+  "definition": 73019,
+  "quantity": 1
+ },
+ "716": {
+  "definition": 73043,
+  "quantity": 1
+ },
+ "717": {
+  "definition": 75001,
+  "quantity": 1
+ },
+ "718": {
+  "definition": 75002,
+  "quantity": 1
+ },
+ "719": {
+  "definition": 75003,
+  "quantity": 1
+ },
+ "720": {
+  "definition": 75004,
+  "quantity": 1
+ },
+ "721": {
+  "definition": 75005,
+  "quantity": 1
+ },
+ "722": {
+  "definition": 75006,
+  "quantity": 1
+ },
+ "723": {
+  "definition": 75007,
+  "quantity": 1
+ },
+ "724": {
+  "definition": 75008,
+  "quantity": 1
+ },
+ "725": {
+  "definition": 75009,
+  "quantity": 1
+ },
+ "726": {
+  "definition": 75010,
+  "quantity": 1
+ },
+ "727": {
+  "definition": 75011,
+  "quantity": 1
+ },
+ "728": {
+  "definition": 75012,
+  "quantity": 1
+ },
+ "729": {
+  "definition": 75013,
+  "quantity": 1
+ },
+ "730": {
+  "definition": 75014,
+  "quantity": 1
+ },
+ "731": {
+  "definition": 75043,
+  "quantity": 1
+ },
+ "732": {
+  "definition": 76001,
+  "quantity": 1
+ },
+ "733": {
+  "definition": 76002,
+  "quantity": 1
+ },
+ "734": {
+  "definition": 76003,
+  "quantity": 1
+ },
+ "735": {
+  "definition": 76004,
+  "quantity": 1
+ },
+ "736": {
+  "definition": 76005,
+  "quantity": 1
+ },
+ "737": {
+  "definition": 76006,
+  "quantity": 1
+ },
+ "738": {
+  "definition": 76007,
+  "quantity": 1
+ },
+ "739": {
+  "definition": 76008,
+  "quantity": 1
+ },
+ "740": {
+  "definition": 76009,
+  "quantity": 1
+ },
+ "741": {
+  "definition": 76010,
+  "quantity": 1
+ },
+ "742": {
+  "definition": 76011,
+  "quantity": 1
+ },
+ "743": {
+  "definition": 76012,
+  "quantity": 1
+ },
+ "744": {
+  "definition": 76013,
+  "quantity": 1
+ },
+ "745": {
+  "definition": 76029,
+  "quantity": 1
+ },
+ "746": {
+  "definition": 76030,
+  "quantity": 1
+ },
+ "747": {
+  "definition": 76043,
+  "quantity": 1
+ },
+ "748": {
+  "definition": 77001,
+  "quantity": 1
+ },
+ "749": {
+  "definition": 77002,
+  "quantity": 1
+ },
+ "750": {
+  "definition": 77003,
+  "quantity": 1
+ },
+ "751": {
+  "definition": 77004,
+  "quantity": 1
+ },
+ "752": {
+  "definition": 77005,
+  "quantity": 1
+ },
+ "753": {
+  "definition": 77006,
+  "quantity": 1
+ },
+ "754": {
+  "definition": 77007,
+  "quantity": 1
+ },
+ "755": {
+  "definition": 77008,
+  "quantity": 1
+ },
+ "756": {
+  "definition": 77010,
+  "quantity": 1
+ },
+ "757": {
+  "definition": 77011,
+  "quantity": 1
+ },
+ "758": {
+  "definition": 77012,
+  "quantity": 1
+ },
+ "759": {
+  "definition": 77013,
+  "quantity": 1
+ },
+ "760": {
+  "definition": 77019,
+  "quantity": 1
+ },
+ "761": {
+  "definition": 77029,
+  "quantity": 1
+ },
+ "762": {
+  "definition": 77030,
+  "quantity": 1
+ },
+ "763": {
+  "definition": 77043,
+  "quantity": 1
+ },
+ "764": {
+  "definition": 78001,
+  "quantity": 1
+ },
+ "765": {
+  "definition": 78002,
+  "quantity": 1
+ },
+ "766": {
+  "definition": 78003,
+  "quantity": 1
+ },
+ "767": {
+  "definition": 78004,
+  "quantity": 1
+ },
+ "768": {
+  "definition": 78005,
+  "quantity": 1
+ },
+ "769": {
+  "definition": 78006,
+  "quantity": 1
+ },
+ "770": {
+  "definition": 78007,
+  "quantity": 1
+ },
+ "771": {
+  "definition": 78008,
+  "quantity": 1
+ },
+ "772": {
+  "definition": 78010,
+  "quantity": 1
+ },
+ "773": {
+  "definition": 78011,
+  "quantity": 1
+ },
+ "774": {
+  "definition": 78012,
+  "quantity": 1
+ },
+ "775": {
+  "definition": 78013,
+  "quantity": 1
+ },
+ "776": {
+  "definition": 78014,
+  "quantity": 1
+ },
+ "777": {
+  "definition": 78019,
+  "quantity": 1
+ },
+ "778": {
+  "definition": 78043,
+  "quantity": 1
+ },
+ "779": {
+  "definition": 80001,
+  "quantity": 1
+ },
+ "780": {
+  "definition": 80002,
+  "quantity": 1
+ },
+ "781": {
+  "definition": 80003,
+  "quantity": 1
+ },
+ "782": {
+  "definition": 80004,
+  "quantity": 1
+ },
+ "783": {
+  "definition": 80005,
+  "quantity": 1
+ },
+ "784": {
+  "definition": 80006,
+  "quantity": 1
+ },
+ "785": {
+  "definition": 80007,
+  "quantity": 1
+ },
+ "786": {
+  "definition": 80008,
+  "quantity": 1
+ },
+ "787": {
+  "definition": 80010,
+  "quantity": 1
+ },
+ "788": {
+  "definition": 80011,
+  "quantity": 1
+ },
+ "789": {
+  "definition": 80012,
+  "quantity": 1
+ },
+ "790": {
+  "definition": 80013,
+  "quantity": 1
+ },
+ "791": {
+  "definition": 80015,
+  "quantity": 1
+ },
+ "792": {
+  "definition": 80016,
+  "quantity": 1
+ },
+ "793": {
+  "definition": 80019,
+  "quantity": 1
+ },
+ "794": {
+  "definition": 80043,
+  "quantity": 1
+ },
+ "795": {
+  "definition": 80049,
+  "quantity": 1
+ },
+ "796": {
+  "definition": 81001,
+  "quantity": 1
+ },
+ "797": {
+  "definition": 81002,
+  "quantity": 1
+ },
+ "798": {
+  "definition": 81003,
+  "quantity": 1
+ },
+ "799": {
+  "definition": 81004,
+  "quantity": 1
+ },
+ "800": {
+  "definition": 81005,
+  "quantity": 1
+ },
+ "801": {
+  "definition": 81006,
+  "quantity": 1
+ },
+ "802": {
+  "definition": 81007,
+  "quantity": 1
+ },
+ "803": {
+  "definition": 81008,
+  "quantity": 1
+ },
+ "804": {
+  "definition": 81010,
+  "quantity": 1
+ },
+ "805": {
+  "definition": 81011,
+  "quantity": 1
+ },
+ "806": {
+  "definition": 81012,
+  "quantity": 1
+ },
+ "807": {
+  "definition": 81013,
+  "quantity": 1
+ },
+ "808": {
+  "definition": 81015,
+  "quantity": 1
+ },
+ "809": {
+  "definition": 81019,
+  "quantity": 1
+ },
+ "810": {
+  "definition": 81030,
+  "quantity": 1
+ },
+ "811": {
+  "definition": 81043,
+  "quantity": 1
+ },
+ "812": {
+  "definition": 82001,
+  "quantity": 1
+ },
+ "813": {
+  "definition": 82002,
+  "quantity": 1
+ },
+ "814": {
+  "definition": 82003,
+  "quantity": 1
+ },
+ "815": {
+  "definition": 82004,
+  "quantity": 1
+ },
+ "816": {
+  "definition": 82005,
+  "quantity": 1
+ },
+ "817": {
+  "definition": 82006,
+  "quantity": 1
+ },
+ "818": {
+  "definition": 82007,
+  "quantity": 1
+ },
+ "819": {
+  "definition": 82008,
+  "quantity": 1
+ },
+ "820": {
+  "definition": 82009,
+  "quantity": 1
+ },
+ "821": {
+  "definition": 82010,
+  "quantity": 1
+ },
+ "822": {
+  "definition": 82011,
+  "quantity": 1
+ },
+ "823": {
+  "definition": 82012,
+  "quantity": 1
+ },
+ "824": {
+  "definition": 82013,
+  "quantity": 1
+ },
+ "825": {
+  "definition": 82030,
+  "quantity": 1
+ },
+ "826": {
+  "definition": 82043,
+  "quantity": 1
+ },
+ "827": {
+  "definition": 83001,
+  "quantity": 1
+ },
+ "828": {
+  "definition": 83002,
+  "quantity": 1
+ },
+ "829": {
+  "definition": 83003,
+  "quantity": 1
+ },
+ "830": {
+  "definition": 83004,
+  "quantity": 1
+ },
+ "831": {
+  "definition": 83005,
+  "quantity": 1
+ },
+ "832": {
+  "definition": 83006,
+  "quantity": 1
+ },
+ "833": {
+  "definition": 83007,
+  "quantity": 1
+ },
+ "834": {
+  "definition": 83008,
+  "quantity": 1
+ },
+ "835": {
+  "definition": 83009,
+  "quantity": 1
+ },
+ "836": {
+  "definition": 83010,
+  "quantity": 1
+ },
+ "837": {
+  "definition": 83011,
+  "quantity": 1
+ },
+ "838": {
+  "definition": 83012,
+  "quantity": 1
+ },
+ "839": {
+  "definition": 83013,
+  "quantity": 1
+ },
+ "840": {
+  "definition": 83029,
+  "quantity": 1
+ },
+ "841": {
+  "definition": 83043,
+  "quantity": 1
+ },
+ "842": {
+  "definition": 84001,
+  "quantity": 1
+ },
+ "843": {
+  "definition": 84002,
+  "quantity": 1
+ },
+ "844": {
+  "definition": 84003,
+  "quantity": 1
+ },
+ "845": {
+  "definition": 84004,
+  "quantity": 1
+ },
+ "846": {
+  "definition": 84005,
+  "quantity": 1
+ },
+ "847": {
+  "definition": 84006,
+  "quantity": 1
+ },
+ "848": {
+  "definition": 84007,
+  "quantity": 1
+ },
+ "849": {
+  "definition": 84008,
+  "quantity": 1
+ },
+ "850": {
+  "definition": 84009,
+  "quantity": 1
+ },
+ "851": {
+  "definition": 84010,
+  "quantity": 1
+ },
+ "852": {
+  "definition": 84011,
+  "quantity": 1
+ },
+ "853": {
+  "definition": 84012,
+  "quantity": 1
+ },
+ "854": {
+  "definition": 84013,
+  "quantity": 1
+ },
+ "855": {
+  "definition": 84029,
+  "quantity": 1
+ },
+ "856": {
+  "definition": 84043,
+  "quantity": 1
+ },
+ "857": {
+  "definition": 86001,
+  "quantity": 1
+ },
+ "858": {
+  "definition": 86002,
+  "quantity": 1
+ },
+ "859": {
+  "definition": 86003,
+  "quantity": 1
+ },
+ "860": {
+  "definition": 86004,
+  "quantity": 1
+ },
+ "861": {
+  "definition": 86005,
+  "quantity": 1
+ },
+ "862": {
+  "definition": 86006,
+  "quantity": 1
+ },
+ "863": {
+  "definition": 86007,
+  "quantity": 1
+ },
+ "864": {
+  "definition": 86008,
+  "quantity": 1
+ },
+ "865": {
+  "definition": 86010,
+  "quantity": 1
+ },
+ "866": {
+  "definition": 86011,
+  "quantity": 1
+ },
+ "867": {
+  "definition": 86012,
+  "quantity": 1
+ },
+ "868": {
+  "definition": 86013,
+  "quantity": 1
+ },
+ "869": {
+  "definition": 86025,
+  "quantity": 1
+ },
+ "870": {
+  "definition": 86043,
+  "quantity": 1
+ },
+ "871": {
+  "definition": 87001,
+  "quantity": 1
+ },
+ "872": {
+  "definition": 87002,
+  "quantity": 1
+ },
+ "873": {
+  "definition": 87003,
+  "quantity": 1
+ },
+ "874": {
+  "definition": 87004,
+  "quantity": 1
+ },
+ "875": {
+  "definition": 87005,
+  "quantity": 1
+ },
+ "876": {
+  "definition": 87006,
+  "quantity": 1
+ },
+ "877": {
+  "definition": 87007,
+  "quantity": 1
+ },
+ "878": {
+  "definition": 87008,
+  "quantity": 1
+ },
+ "879": {
+  "definition": 87009,
+  "quantity": 1
+ },
+ "880": {
+  "definition": 87010,
+  "quantity": 1
+ },
+ "881": {
+  "definition": 87011,
+  "quantity": 1
+ },
+ "882": {
+  "definition": 87012,
+  "quantity": 1
+ },
+ "883": {
+  "definition": 87013,
+  "quantity": 1
+ },
+ "884": {
+  "definition": 87043,
+  "quantity": 1
+ },
+ "885": {
+  "definition": 87046,
+  "quantity": 1
+ },
+ "886": {
+  "definition": 89009,
+  "quantity": 1
+ },
+ "887": {
+  "definition": 90001,
+  "quantity": 1
+ },
+ "888": {
+  "definition": 90002,
+  "quantity": 1
+ },
+ "889": {
+  "definition": 90003,
+  "quantity": 1
+ },
+ "890": {
+  "definition": 90004,
+  "quantity": 1
+ },
+ "891": {
+  "definition": 90005,
+  "quantity": 1
+ },
+ "892": {
+  "definition": 90006,
+  "quantity": 1
+ },
+ "893": {
+  "definition": 90007,
+  "quantity": 1
+ },
+ "894": {
+  "definition": 90008,
+  "quantity": 1
+ },
+ "895": {
+  "definition": 90010,
+  "quantity": 1
+ },
+ "896": {
+  "definition": 90011,
+  "quantity": 1
+ },
+ "897": {
+  "definition": 90012,
+  "quantity": 1
+ },
+ "898": {
+  "definition": 90013,
+  "quantity": 1
+ },
+ "899": {
+  "definition": 90015,
+  "quantity": 1
+ },
+ "900": {
+  "definition": 90043,
+  "quantity": 1
+ },
+ "901": {
+  "definition": 91013,
+  "quantity": 1
+ },
+ "902": {
+  "definition": 92001,
+  "quantity": 1
+ },
+ "903": {
+  "definition": 92002,
+  "quantity": 1
+ },
+ "904": {
+  "definition": 92003,
+  "quantity": 1
+ },
+ "905": {
+  "definition": 92004,
+  "quantity": 1
+ },
+ "906": {
+  "definition": 92005,
+  "quantity": 1
+ },
+ "907": {
+  "definition": 92006,
+  "quantity": 1
+ },
+ "908": {
+  "definition": 92007,
+  "quantity": 1
+ },
+ "909": {
+  "definition": 92008,
+  "quantity": 1
+ },
+ "910": {
+  "definition": 92010,
+  "quantity": 1
+ },
+ "911": {
+  "definition": 92011,
+  "quantity": 1
+ },
+ "912": {
+  "definition": 92012,
+  "quantity": 1
+ },
+ "913": {
+  "definition": 92013,
+  "quantity": 1
+ },
+ "914": {
+  "definition": 92019,
+  "quantity": 1
+ },
+ "915": {
+  "definition": 92043,
+  "quantity": 1
+ },
+ "916": {
+  "definition": 92048,
+  "quantity": 1
+ },
+ "917": {
+  "definition": 93001,
+  "quantity": 1
+ },
+ "918": {
+  "definition": 93002,
+  "quantity": 1
+ },
+ "919": {
+  "definition": 93003,
+  "quantity": 1
+ },
+ "920": {
+  "definition": 93004,
+  "quantity": 1
+ },
+ "921": {
+  "definition": 93005,
+  "quantity": 1
+ },
+ "922": {
+  "definition": 93006,
+  "quantity": 1
+ },
+ "923": {
+  "definition": 93007,
+  "quantity": 1
+ },
+ "924": {
+  "definition": 93008,
+  "quantity": 1
+ },
+ "925": {
+  "definition": 93009,
+  "quantity": 1
+ },
+ "926": {
+  "definition": 93010,
+  "quantity": 1
+ },
+ "927": {
+  "definition": 93011,
+  "quantity": 1
+ },
+ "928": {
+  "definition": 93012,
+  "quantity": 1
+ },
+ "929": {
+  "definition": 93013,
+  "quantity": 1
+ },
+ "930": {
+  "definition": 93043,
+  "quantity": 1
+ },
+ "931": {
+  "definition": 93049,
+  "quantity": 1
+ },
+ "932": {
+  "definition": 94001,
+  "quantity": 1
+ },
+ "933": {
+  "definition": 94002,
+  "quantity": 1
+ },
+ "934": {
+  "definition": 94003,
+  "quantity": 1
+ },
+ "935": {
+  "definition": 94004,
+  "quantity": 1
+ },
+ "936": {
+  "definition": 94005,
+  "quantity": 1
+ },
+ "937": {
+  "definition": 94006,
+  "quantity": 1
+ },
+ "938": {
+  "definition": 94007,
+  "quantity": 1
+ },
+ "939": {
+  "definition": 94008,
+  "quantity": 1
+ },
+ "940": {
+  "definition": 94010,
+  "quantity": 1
+ },
+ "941": {
+  "definition": 94011,
+  "quantity": 1
+ },
+ "942": {
+  "definition": 94012,
+  "quantity": 1
+ },
+ "943": {
+  "definition": 94013,
+  "quantity": 1
+ },
+ "944": {
+  "definition": 94014,
+  "quantity": 1
+ },
+ "945": {
+  "definition": 94019,
+  "quantity": 1
+ },
+ "946": {
+  "definition": 94043,
+  "quantity": 1
+ },
+ "947": {
+  "definition": 95001,
+  "quantity": 1
+ },
+ "948": {
+  "definition": 95002,
+  "quantity": 1
+ },
+ "949": {
+  "definition": 95003,
+  "quantity": 1
+ },
+ "950": {
+  "definition": 95004,
+  "quantity": 1
+ },
+ "951": {
+  "definition": 95005,
+  "quantity": 1
+ },
+ "952": {
+  "definition": 95006,
+  "quantity": 1
+ },
+ "953": {
+  "definition": 95007,
+  "quantity": 1
+ },
+ "954": {
+  "definition": 95008,
+  "quantity": 1
+ },
+ "955": {
+  "definition": 95009,
+  "quantity": 1
+ },
+ "956": {
+  "definition": 95010,
+  "quantity": 1
+ },
+ "957": {
+  "definition": 95011,
+  "quantity": 1
+ },
+ "958": {
+  "definition": 95012,
+  "quantity": 1
+ },
+ "959": {
+  "definition": 95013,
+  "quantity": 1
+ },
+ "960": {
+  "definition": 95014,
+  "quantity": 1
+ },
+ "961": {
+  "definition": 95043,
+  "quantity": 1
+ },
+ "962": {
+  "definition": 96001,
+  "quantity": 1
+ },
+ "963": {
+  "definition": 96002,
+  "quantity": 1
+ },
+ "964": {
+  "definition": 96003,
+  "quantity": 1
+ },
+ "965": {
+  "definition": 96004,
+  "quantity": 1
+ },
+ "966": {
+  "definition": 96005,
+  "quantity": 1
+ },
+ "967": {
+  "definition": 96006,
+  "quantity": 1
+ },
+ "968": {
+  "definition": 96007,
+  "quantity": 1
+ },
+ "969": {
+  "definition": 96008,
+  "quantity": 1
+ },
+ "970": {
+  "definition": 96009,
+  "quantity": 1
+ },
+ "971": {
+  "definition": 96010,
+  "quantity": 1
+ },
+ "972": {
+  "definition": 96011,
+  "quantity": 1
+ },
+ "973": {
+  "definition": 96012,
+  "quantity": 1
+ },
+ "974": {
+  "definition": 96013,
+  "quantity": 1
+ },
+ "975": {
+  "definition": 96024,
+  "quantity": 1
+ },
+ "976": {
+  "definition": 96043,
+  "quantity": 1
+ },
+ "977": {
+  "definition": 96046,
+  "quantity": 1
+ },
+ "978": {
+  "definition": 97013,
+  "quantity": 1
+ },
+ "979": {
+  "definition": 98013,
+  "quantity": 1
+ },
+ "980": {
+  "definition": 99001,
+  "quantity": 1
+ },
+ "981": {
+  "definition": 99002,
+  "quantity": 1
+ },
+ "982": {
+  "definition": 99003,
+  "quantity": 1
+ },
+ "983": {
+  "definition": 99004,
+  "quantity": 1
+ },
+ "984": {
+  "definition": 99005,
+  "quantity": 1
+ },
+ "985": {
+  "definition": 99006,
+  "quantity": 1
+ },
+ "986": {
+  "definition": 99007,
+  "quantity": 1
+ },
+ "987": {
+  "definition": 99008,
+  "quantity": 1
+ },
+ "988": {
+  "definition": 99009,
+  "quantity": 1
+ },
+ "989": {
+  "definition": 99010,
+  "quantity": 1
+ },
+ "990": {
+  "definition": 99011,
+  "quantity": 1
+ },
+ "991": {
+  "definition": 99012,
+  "quantity": 1
+ },
+ "992": {
+  "definition": 99013,
+  "quantity": 1
+ },
+ "993": {
+  "definition": 99043,
+  "quantity": 1
+ },
+ "994": {
+  "definition": 99046,
+  "quantity": 1
+ },
+ "995": {
+  "definition": 100001,
+  "quantity": 1
+ },
+ "996": {
+  "definition": 100002,
+  "quantity": 1
+ },
+ "997": {
+  "definition": 100003,
+  "quantity": 1
+ },
+ "998": {
+  "definition": 100004,
+  "quantity": 1
+ },
+ "999": {
+  "definition": 100005,
+  "quantity": 1
+ },
+ "1000": {
+  "definition": 100006,
+  "quantity": 1
+ },
+ "1001": {
+  "definition": 100007,
+  "quantity": 1
+ },
+ "1002": {
+  "definition": 100008,
+  "quantity": 1
+ },
+ "1003": {
+  "definition": 100009,
+  "quantity": 1
+ },
+ "1004": {
+  "definition": 100010,
+  "quantity": 1
+ },
+ "1005": {
+  "definition": 100011,
+  "quantity": 1
+ },
+ "1006": {
+  "definition": 100012,
+  "quantity": 1
+ },
+ "1007": {
+  "definition": 100013,
+  "quantity": 1
+ },
+ "1008": {
+  "definition": 100043,
+  "quantity": 1
+ },
+ "1009": {
+  "definition": 100046,
+  "quantity": 1
+ },
+ "1010": {
+  "definition": 102001,
+  "quantity": 1
+ },
+ "1011": {
+  "definition": 102002,
+  "quantity": 1
+ },
+ "1012": {
+  "definition": 102003,
+  "quantity": 1
+ },
+ "1013": {
+  "definition": 102004,
+  "quantity": 1
+ },
+ "1014": {
+  "definition": 102005,
+  "quantity": 1
+ },
+ "1015": {
+  "definition": 102006,
+  "quantity": 1
+ },
+ "1016": {
+  "definition": 102007,
+  "quantity": 1
+ },
+ "1017": {
+  "definition": 102008,
+  "quantity": 1
+ },
+ "1018": {
+  "definition": 102009,
+  "quantity": 1
+ },
+ "1019": {
+  "definition": 102010,
+  "quantity": 1
+ },
+ "1020": {
+  "definition": 102011,
+  "quantity": 1
+ },
+ "1021": {
+  "definition": 102012,
+  "quantity": 1
+ },
+ "1022": {
+  "definition": 102013,
+  "quantity": 1
+ },
+ "1023": {
+  "definition": 102043,
+  "quantity": 1
+ },
+ "1024": {
+  "definition": 102046,
+  "quantity": 1
+ },
+ "1025": {
+  "definition": 103001,
+  "quantity": 1
+ },
+ "1026": {
+  "definition": 103002,
+  "quantity": 1
+ },
+ "1027": {
+  "definition": 103003,
+  "quantity": 1
+ },
+ "1028": {
+  "definition": 103004,
+  "quantity": 1
+ },
+ "1029": {
+  "definition": 103005,
+  "quantity": 1
+ },
+ "1030": {
+  "definition": 103006,
+  "quantity": 1
+ },
+ "1031": {
+  "definition": 103007,
+  "quantity": 1
+ },
+ "1032": {
+  "definition": 103008,
+  "quantity": 1
+ },
+ "1033": {
+  "definition": 103010,
+  "quantity": 1
+ },
+ "1034": {
+  "definition": 103011,
+  "quantity": 1
+ },
+ "1035": {
+  "definition": 103012,
+  "quantity": 1
+ },
+ "1036": {
+  "definition": 103013,
+  "quantity": 1
+ },
+ "1037": {
+  "definition": 103016,
+  "quantity": 1
+ },
+ "1038": {
+  "definition": 103019,
+  "quantity": 1
+ },
+ "1039": {
+  "definition": 103043,
+  "quantity": 1
+ },
+ "1040": {
+  "definition": 104001,
+  "quantity": 1
+ },
+ "1041": {
+  "definition": 104002,
+  "quantity": 1
+ },
+ "1042": {
+  "definition": 104003,
+  "quantity": 1
+ },
+ "1043": {
+  "definition": 104004,
+  "quantity": 1
+ },
+ "1044": {
+  "definition": 104005,
+  "quantity": 1
+ },
+ "1045": {
+  "definition": 104006,
+  "quantity": 1
+ },
+ "1046": {
+  "definition": 104007,
+  "quantity": 1
+ },
+ "1047": {
+  "definition": 104008,
+  "quantity": 1
+ },
+ "1048": {
+  "definition": 104009,
+  "quantity": 1
+ },
+ "1049": {
+  "definition": 104010,
+  "quantity": 1
+ },
+ "1050": {
+  "definition": 104011,
+  "quantity": 1
+ },
+ "1051": {
+  "definition": 104012,
+  "quantity": 1
+ },
+ "1052": {
+  "definition": 104013,
+  "quantity": 1
+ },
+ "1053": {
+  "definition": 104014,
+  "quantity": 1
+ },
+ "1054": {
+  "definition": 104017,
+  "quantity": 1
+ },
+ "1055": {
+  "definition": 104043,
+  "quantity": 1
+ },
+ "1056": {
+  "definition": 106001,
+  "quantity": 1
+ },
+ "1057": {
+  "definition": 106002,
+  "quantity": 1
+ },
+ "1058": {
+  "definition": 106003,
+  "quantity": 1
+ },
+ "1059": {
+  "definition": 106004,
+  "quantity": 1
+ },
+ "1060": {
+  "definition": 106005,
+  "quantity": 1
+ },
+ "1061": {
+  "definition": 106006,
+  "quantity": 1
+ },
+ "1062": {
+  "definition": 106007,
+  "quantity": 1
+ },
+ "1063": {
+  "definition": 106008,
+  "quantity": 1
+ },
+ "1064": {
+  "definition": 106009,
+  "quantity": 1
+ },
+ "1065": {
+  "definition": 106010,
+  "quantity": 1
+ },
+ "1066": {
+  "definition": 106011,
+  "quantity": 1
+ },
+ "1067": {
+  "definition": 106012,
+  "quantity": 1
+ },
+ "1068": {
+  "definition": 106013,
+  "quantity": 1
+ },
+ "1069": {
+  "definition": 106020,
+  "quantity": 1
+ },
+ "1070": {
+  "definition": 106043,
+  "quantity": 1
+ },
+ "1071": {
+  "definition": 107001,
+  "quantity": 1
+ },
+ "1072": {
+  "definition": 107002,
+  "quantity": 1
+ },
+ "1073": {
+  "definition": 107003,
+  "quantity": 1
+ },
+ "1074": {
+  "definition": 107004,
+  "quantity": 1
+ },
+ "1075": {
+  "definition": 107005,
+  "quantity": 1
+ },
+ "1076": {
+  "definition": 107006,
+  "quantity": 1
+ },
+ "1077": {
+  "definition": 107007,
+  "quantity": 1
+ },
+ "1078": {
+  "definition": 107008,
+  "quantity": 1
+ },
+ "1079": {
+  "definition": 107009,
+  "quantity": 1
+ },
+ "1080": {
+  "definition": 107010,
+  "quantity": 1
+ },
+ "1081": {
+  "definition": 107011,
+  "quantity": 1
+ },
+ "1082": {
+  "definition": 107012,
+  "quantity": 1
+ },
+ "1083": {
+  "definition": 107013,
+  "quantity": 1
+ },
+ "1084": {
+  "definition": 107020,
+  "quantity": 1
+ },
+ "1085": {
+  "definition": 107029,
+  "quantity": 1
+ },
+ "1086": {
+  "definition": 107043,
+  "quantity": 1
+ },
+ "1087": {
+  "definition": 108001,
+  "quantity": 1
+ },
+ "1088": {
+  "definition": 108002,
+  "quantity": 1
+ },
+ "1089": {
+  "definition": 108003,
+  "quantity": 1
+ },
+ "1090": {
+  "definition": 108004,
+  "quantity": 1
+ },
+ "1091": {
+  "definition": 108005,
+  "quantity": 1
+ },
+ "1092": {
+  "definition": 108006,
+  "quantity": 1
+ },
+ "1093": {
+  "definition": 108007,
+  "quantity": 1
+ },
+ "1094": {
+  "definition": 108008,
+  "quantity": 1
+ },
+ "1095": {
+  "definition": 108009,
+  "quantity": 1
+ },
+ "1096": {
+  "definition": 108010,
+  "quantity": 1
+ },
+ "1097": {
+  "definition": 108011,
+  "quantity": 1
+ },
+ "1098": {
+  "definition": 108012,
+  "quantity": 1
+ },
+ "1099": {
+  "definition": 108013,
+  "quantity": 1
+ },
+ "1100": {
+  "definition": 108043,
+  "quantity": 1
+ },
+ "1101": {
+  "definition": 108046,
+  "quantity": 1
+ },
+ "1102": {
+  "definition": 109009,
+  "quantity": 1
+ },
+ "1103": {
+  "definition": 110001,
+  "quantity": 1
+ },
+ "1104": {
+  "definition": 110002,
+  "quantity": 1
+ },
+ "1105": {
+  "definition": 110003,
+  "quantity": 1
+ },
+ "1106": {
+  "definition": 110004,
+  "quantity": 1
+ },
+ "1107": {
+  "definition": 110005,
+  "quantity": 1
+ },
+ "1108": {
+  "definition": 110006,
+  "quantity": 1
+ },
+ "1109": {
+  "definition": 110007,
+  "quantity": 1
+ },
+ "1110": {
+  "definition": 110008,
+  "quantity": 1
+ },
+ "1111": {
+  "definition": 110009,
+  "quantity": 1
+ },
+ "1112": {
+  "definition": 110010,
+  "quantity": 1
+ },
+ "1113": {
+  "definition": 110011,
+  "quantity": 1
+ },
+ "1114": {
+  "definition": 110012,
+  "quantity": 1
+ },
+ "1115": {
+  "definition": 110013,
+  "quantity": 1
+ },
+ "1116": {
+  "definition": 110043,
+  "quantity": 1
+ },
+ "1117": {
+  "definition": 110046,
+  "quantity": 1
+ },
+ "1118": {
+  "definition": 111001,
+  "quantity": 1
+ },
+ "1119": {
+  "definition": 111002,
+  "quantity": 1
+ },
+ "1120": {
+  "definition": 111003,
+  "quantity": 1
+ },
+ "1121": {
+  "definition": 111004,
+  "quantity": 1
+ },
+ "1122": {
+  "definition": 111005,
+  "quantity": 1
+ },
+ "1123": {
+  "definition": 111006,
+  "quantity": 1
+ },
+ "1124": {
+  "definition": 111007,
+  "quantity": 1
+ },
+ "1125": {
+  "definition": 111008,
+  "quantity": 1
+ },
+ "1126": {
+  "definition": 111010,
+  "quantity": 1
+ },
+ "1127": {
+  "definition": 111011,
+  "quantity": 1
+ },
+ "1128": {
+  "definition": 111012,
+  "quantity": 1
+ },
+ "1129": {
+  "definition": 111013,
+  "quantity": 1
+ },
+ "1130": {
+  "definition": 111019,
+  "quantity": 1
+ },
+ "1131": {
+  "definition": 111030,
+  "quantity": 1
+ },
+ "1132": {
+  "definition": 111043,
+  "quantity": 1
+ },
+ "1133": {
+  "definition": 112001,
+  "quantity": 1
+ },
+ "1134": {
+  "definition": 112002,
+  "quantity": 1
+ },
+ "1135": {
+  "definition": 112003,
+  "quantity": 1
+ },
+ "1136": {
+  "definition": 112004,
+  "quantity": 1
+ },
+ "1137": {
+  "definition": 112005,
+  "quantity": 1
+ },
+ "1138": {
+  "definition": 112006,
+  "quantity": 1
+ },
+ "1139": {
+  "definition": 112007,
+  "quantity": 1
+ },
+ "1140": {
+  "definition": 112008,
+  "quantity": 1
+ },
+ "1141": {
+  "definition": 112009,
+  "quantity": 1
+ },
+ "1142": {
+  "definition": 112010,
+  "quantity": 1
+ },
+ "1143": {
+  "definition": 112011,
+  "quantity": 1
+ },
+ "1144": {
+  "definition": 112012,
+  "quantity": 1
+ },
+ "1145": {
+  "definition": 112013,
+  "quantity": 1
+ },
+ "1146": {
+  "definition": 112043,
+  "quantity": 1
+ },
+ "1147": {
+  "definition": 112047,
+  "quantity": 1
+ },
+ "1148": {
+  "definition": 113004,
+  "quantity": 1
+ },
+ "1149": {
+  "definition": 114001,
+  "quantity": 1
+ },
+ "1150": {
+  "definition": 114002,
+  "quantity": 1
+ },
+ "1151": {
+  "definition": 114003,
+  "quantity": 1
+ },
+ "1152": {
+  "definition": 114004,
+  "quantity": 1
+ },
+ "1153": {
+  "definition": 114005,
+  "quantity": 1
+ },
+ "1154": {
+  "definition": 114006,
+  "quantity": 1
+ },
+ "1155": {
+  "definition": 114007,
+  "quantity": 1
+ },
+ "1156": {
+  "definition": 114008,
+  "quantity": 1
+ },
+ "1157": {
+  "definition": 114009,
+  "quantity": 1
+ },
+ "1158": {
+  "definition": 114010,
+  "quantity": 1
+ },
+ "1159": {
+  "definition": 114011,
+  "quantity": 1
+ },
+ "1160": {
+  "definition": 114012,
+  "quantity": 1
+ },
+ "1161": {
+  "definition": 114013,
+  "quantity": 1
+ },
+ "1162": {
+  "definition": 114015,
+  "quantity": 1
+ },
+ "1163": {
+  "definition": 114043,
+  "quantity": 1
+ },
+ "1164": {
+  "definition": 115001,
+  "quantity": 1
+ },
+ "1165": {
+  "definition": 115002,
+  "quantity": 1
+ },
+ "1166": {
+  "definition": 115003,
+  "quantity": 1
+ },
+ "1167": {
+  "definition": 115004,
+  "quantity": 1
+ },
+ "1168": {
+  "definition": 115005,
+  "quantity": 1
+ },
+ "1169": {
+  "definition": 115006,
+  "quantity": 1
+ },
+ "1170": {
+  "definition": 115007,
+  "quantity": 1
+ },
+ "1171": {
+  "definition": 115008,
+  "quantity": 1
+ },
+ "1172": {
+  "definition": 115009,
+  "quantity": 1
+ },
+ "1173": {
+  "definition": 115010,
+  "quantity": 1
+ },
+ "1174": {
+  "definition": 115011,
+  "quantity": 1
+ },
+ "1175": {
+  "definition": 115012,
+  "quantity": 1
+ },
+ "1176": {
+  "definition": 115013,
+  "quantity": 1
+ },
+ "1177": {
+  "definition": 115015,
+  "quantity": 1
+ },
+ "1178": {
+  "definition": 115043,
+  "quantity": 1
+ },
+ "1179": {
+  "definition": 117001,
+  "quantity": 1
+ },
+ "1180": {
+  "definition": 117002,
+  "quantity": 1
+ },
+ "1181": {
+  "definition": 117003,
+  "quantity": 1
+ },
+ "1182": {
+  "definition": 117004,
+  "quantity": 1
+ },
+ "1183": {
+  "definition": 117005,
+  "quantity": 1
+ },
+ "1184": {
+  "definition": 117006,
+  "quantity": 1
+ },
+ "1185": {
+  "definition": 117007,
+  "quantity": 1
+ },
+ "1186": {
+  "definition": 117008,
+  "quantity": 1
+ },
+ "1187": {
+  "definition": 117010,
+  "quantity": 1
+ },
+ "1188": {
+  "definition": 117011,
+  "quantity": 1
+ },
+ "1189": {
+  "definition": 117012,
+  "quantity": 1
+ },
+ "1190": {
+  "definition": 117013,
+  "quantity": 1
+ },
+ "1191": {
+  "definition": 117043,
+  "quantity": 1
+ },
+ "1192": {
+  "definition": 118001,
+  "quantity": 1
+ },
+ "1193": {
+  "definition": 118002,
+  "quantity": 1
+ },
+ "1194": {
+  "definition": 118003,
+  "quantity": 1
+ },
+ "1195": {
+  "definition": 118004,
+  "quantity": 1
+ },
+ "1196": {
+  "definition": 118005,
+  "quantity": 1
+ },
+ "1197": {
+  "definition": 118006,
+  "quantity": 1
+ },
+ "1198": {
+  "definition": 118007,
+  "quantity": 1
+ },
+ "1199": {
+  "definition": 118008,
+  "quantity": 1
+ },
+ "1200": {
+  "definition": 118009,
+  "quantity": 1
+ },
+ "1201": {
+  "definition": 118010,
+  "quantity": 1
+ },
+ "1202": {
+  "definition": 118011,
+  "quantity": 1
+ },
+ "1203": {
+  "definition": 118012,
+  "quantity": 1
+ },
+ "1204": {
+  "definition": 118013,
+  "quantity": 1
+ },
+ "1205": {
+  "definition": 118043,
+  "quantity": 1
+ },
+ "1206": {
+  "definition": 118048,
+  "quantity": 1
+ },
+ "1207": {
+  "definition": 119001,
+  "quantity": 1
+ },
+ "1208": {
+  "definition": 119002,
+  "quantity": 1
+ },
+ "1209": {
+  "definition": 119003,
+  "quantity": 1
+ },
+ "1210": {
+  "definition": 119004,
+  "quantity": 1
+ },
+ "1211": {
+  "definition": 119005,
+  "quantity": 1
+ },
+ "1212": {
+  "definition": 119006,
+  "quantity": 1
+ },
+ "1213": {
+  "definition": 119007,
+  "quantity": 1
+ },
+ "1214": {
+  "definition": 119008,
+  "quantity": 1
+ },
+ "1215": {
+  "definition": 119010,
+  "quantity": 1
+ },
+ "1216": {
+  "definition": 119011,
+  "quantity": 1
+ },
+ "1217": {
+  "definition": 119012,
+  "quantity": 1
+ },
+ "1218": {
+  "definition": 119013,
+  "quantity": 1
+ },
+ "1219": {
+  "definition": 119019,
+  "quantity": 1
+ },
+ "1220": {
+  "definition": 119043,
+  "quantity": 1
+ },
+ "1221": {
+  "definition": 119049,
+  "quantity": 1
+ },
+ "1222": {
+  "definition": 120001,
+  "quantity": 1
+ },
+ "1223": {
+  "definition": 120002,
+  "quantity": 1
+ },
+ "1224": {
+  "definition": 120003,
+  "quantity": 1
+ },
+ "1225": {
+  "definition": 120004,
+  "quantity": 1
+ },
+ "1226": {
+  "definition": 120005,
+  "quantity": 1
+ },
+ "1227": {
+  "definition": 120006,
+  "quantity": 1
+ },
+ "1228": {
+  "definition": 120007,
+  "quantity": 1
+ },
+ "1229": {
+  "definition": 120008,
+  "quantity": 1
+ },
+ "1230": {
+  "definition": 120010,
+  "quantity": 1
+ },
+ "1231": {
+  "definition": 120011,
+  "quantity": 1
+ },
+ "1232": {
+  "definition": 120012,
+  "quantity": 1
+ },
+ "1233": {
+  "definition": 120013,
+  "quantity": 1
+ },
+ "1234": {
+  "definition": 120021,
+  "quantity": 1
+ },
+ "1235": {
+  "definition": 120043,
+  "quantity": 1
+ },
+ "1236": {
+  "definition": 122001,
+  "quantity": 1
+ },
+ "1237": {
+  "definition": 122002,
+  "quantity": 1
+ },
+ "1238": {
+  "definition": 122003,
+  "quantity": 1
+ },
+ "1239": {
+  "definition": 122004,
+  "quantity": 1
+ },
+ "1240": {
+  "definition": 122005,
+  "quantity": 1
+ },
+ "1241": {
+  "definition": 122006,
+  "quantity": 1
+ },
+ "1242": {
+  "definition": 122007,
+  "quantity": 1
+ },
+ "1243": {
+  "definition": 122008,
+  "quantity": 1
+ },
+ "1244": {
+  "definition": 122010,
+  "quantity": 1
+ },
+ "1245": {
+  "definition": 122011,
+  "quantity": 1
+ },
+ "1246": {
+  "definition": 122012,
+  "quantity": 1
+ },
+ "1247": {
+  "definition": 122013,
+  "quantity": 1
+ },
+ "1248": {
+  "definition": 122016,
+  "quantity": 1
+ },
+ "1249": {
+  "definition": 122019,
+  "quantity": 1
+ },
+ "1250": {
+  "definition": 122043,
+  "quantity": 1
+ },
+ "1251": {
+  "definition": 122048,
+  "quantity": 1
+ },
+ "1252": {
+  "definition": 123001,
+  "quantity": 1
+ },
+ "1253": {
+  "definition": 123002,
+  "quantity": 1
+ },
+ "1254": {
+  "definition": 123003,
+  "quantity": 1
+ },
+ "1255": {
+  "definition": 123004,
+  "quantity": 1
+ },
+ "1256": {
+  "definition": 123005,
+  "quantity": 1
+ },
+ "1257": {
+  "definition": 123006,
+  "quantity": 1
+ },
+ "1258": {
+  "definition": 123007,
+  "quantity": 1
+ },
+ "1259": {
+  "definition": 123008,
+  "quantity": 1
+ },
+ "1260": {
+  "definition": 123010,
+  "quantity": 1
+ },
+ "1261": {
+  "definition": 123011,
+  "quantity": 1
+ },
+ "1262": {
+  "definition": 123012,
+  "quantity": 1
+ },
+ "1263": {
+  "definition": 123013,
+  "quantity": 1
+ },
+ "1264": {
+  "definition": 123016,
+  "quantity": 1
+ },
+ "1265": {
+  "definition": 123019,
+  "quantity": 1
+ },
+ "1266": {
+  "definition": 123043,
+  "quantity": 1
+ },
+ "1267": {
+  "definition": 124001,
+  "quantity": 1
+ },
+ "1268": {
+  "definition": 124002,
+  "quantity": 1
+ },
+ "1269": {
+  "definition": 124003,
+  "quantity": 1
+ },
+ "1270": {
+  "definition": 124004,
+  "quantity": 1
+ },
+ "1271": {
+  "definition": 124005,
+  "quantity": 1
+ },
+ "1272": {
+  "definition": 124006,
+  "quantity": 1
+ },
+ "1273": {
+  "definition": 124007,
+  "quantity": 1
+ },
+ "1274": {
+  "definition": 124008,
+  "quantity": 1
+ },
+ "1275": {
+  "definition": 124010,
+  "quantity": 1
+ },
+ "1276": {
+  "definition": 124011,
+  "quantity": 1
+ },
+ "1277": {
+  "definition": 124012,
+  "quantity": 1
+ },
+ "1278": {
+  "definition": 124013,
+  "quantity": 1
+ },
+ "1279": {
+  "definition": 124014,
+  "quantity": 1
+ },
+ "1280": {
+  "definition": 124017,
+  "quantity": 1
+ },
+ "1281": {
+  "definition": 124019,
+  "quantity": 1
+ },
+ "1282": {
+  "definition": 124043,
+  "quantity": 1
+ },
+ "1283": {
+  "definition": 125001,
+  "quantity": 1
+ },
+ "1284": {
+  "definition": 125002,
+  "quantity": 1
+ },
+ "1285": {
+  "definition": 125003,
+  "quantity": 1
+ },
+ "1286": {
+  "definition": 125004,
+  "quantity": 1
+ },
+ "1287": {
+  "definition": 125005,
+  "quantity": 1
+ },
+ "1288": {
+  "definition": 125006,
+  "quantity": 1
+ },
+ "1289": {
+  "definition": 125007,
+  "quantity": 1
+ },
+ "1290": {
+  "definition": 125008,
+  "quantity": 1
+ },
+ "1291": {
+  "definition": 125009,
+  "quantity": 1
+ },
+ "1292": {
+  "definition": 125010,
+  "quantity": 1
+ },
+ "1293": {
+  "definition": 125011,
+  "quantity": 1
+ },
+ "1294": {
+  "definition": 125012,
+  "quantity": 1
+ },
+ "1295": {
+  "definition": 125013,
+  "quantity": 1
+ },
+ "1296": {
+  "definition": 125014,
+  "quantity": 1
+ },
+ "1297": {
+  "definition": 125017,
+  "quantity": 1
+ },
+ "1298": {
+  "definition": 125043,
+  "quantity": 1
+ },
+ "1299": {
+  "definition": 127001,
+  "quantity": 1
+ },
+ "1300": {
+  "definition": 127002,
+  "quantity": 1
+ },
+ "1301": {
+  "definition": 127003,
+  "quantity": 1
+ },
+ "1302": {
+  "definition": 127004,
+  "quantity": 1
+ },
+ "1303": {
+  "definition": 127005,
+  "quantity": 1
+ },
+ "1304": {
+  "definition": 127006,
+  "quantity": 1
+ },
+ "1305": {
+  "definition": 127007,
+  "quantity": 1
+ },
+ "1306": {
+  "definition": 127008,
+  "quantity": 1
+ },
+ "1307": {
+  "definition": 127010,
+  "quantity": 1
+ },
+ "1308": {
+  "definition": 127011,
+  "quantity": 1
+ },
+ "1309": {
+  "definition": 127012,
+  "quantity": 1
+ },
+ "1310": {
+  "definition": 127013,
+  "quantity": 1
+ },
+ "1311": {
+  "definition": 127025,
+  "quantity": 1
+ },
+ "1312": {
+  "definition": 127043,
+  "quantity": 1
+ },
+ "1313": {
+  "definition": 129001,
+  "quantity": 1
+ },
+ "1314": {
+  "definition": 129002,
+  "quantity": 1
+ },
+ "1315": {
+  "definition": 129003,
+  "quantity": 1
+ },
+ "1316": {
+  "definition": 129004,
+  "quantity": 1
+ },
+ "1317": {
+  "definition": 129005,
+  "quantity": 1
+ },
+ "1318": {
+  "definition": 129006,
+  "quantity": 1
+ },
+ "1319": {
+  "definition": 129007,
+  "quantity": 1
+ },
+ "1320": {
+  "definition": 129008,
+  "quantity": 1
+ },
+ "1321": {
+  "definition": 129010,
+  "quantity": 1
+ },
+ "1322": {
+  "definition": 129011,
+  "quantity": 1
+ },
+ "1323": {
+  "definition": 129012,
+  "quantity": 1
+ },
+ "1324": {
+  "definition": 129013,
+  "quantity": 1
+ },
+ "1325": {
+  "definition": 129019,
+  "quantity": 1
+ },
+ "1326": {
+  "definition": 129043,
+  "quantity": 1
+ },
+ "1327": {
+  "definition": 129049,
+  "quantity": 1
+ },
+ "1328": {
+  "definition": 131001,
+  "quantity": 1
+ },
+ "1329": {
+  "definition": 131002,
+  "quantity": 1
+ },
+ "1330": {
+  "definition": 131003,
+  "quantity": 1
+ },
+ "1331": {
+  "definition": 131004,
+  "quantity": 1
+ },
+ "1332": {
+  "definition": 131005,
+  "quantity": 1
+ },
+ "1333": {
+  "definition": 131006,
+  "quantity": 1
+ },
+ "1334": {
+  "definition": 131007,
+  "quantity": 1
+ },
+ "1335": {
+  "definition": 131008,
+  "quantity": 1
+ },
+ "1336": {
+  "definition": 131009,
+  "quantity": 1
+ },
+ "1337": {
+  "definition": 131010,
+  "quantity": 1
+ },
+ "1338": {
+  "definition": 131011,
+  "quantity": 1
+ },
+ "1339": {
+  "definition": 131012,
+  "quantity": 1
+ },
+ "1340": {
+  "definition": 131013,
+  "quantity": 1
+ },
+ "1341": {
+  "definition": 131043,
+  "quantity": 1
+ },
+ "1342": {
+  "definition": 131047,
+  "quantity": 1
+ },
+ "1343": {
+  "definition": 132001,
+  "quantity": 1
+ },
+ "1344": {
+  "definition": 132002,
+  "quantity": 1
+ },
+ "1345": {
+  "definition": 132003,
+  "quantity": 1
+ },
+ "1346": {
+  "definition": 132004,
+  "quantity": 1
+ },
+ "1347": {
+  "definition": 132005,
+  "quantity": 1
+ },
+ "1348": {
+  "definition": 132006,
+  "quantity": 1
+ },
+ "1349": {
+  "definition": 132007,
+  "quantity": 1
+ },
+ "1350": {
+  "definition": 132008,
+  "quantity": 1
+ },
+ "1351": {
+  "definition": 132010,
+  "quantity": 1
+ },
+ "1352": {
+  "definition": 132011,
+  "quantity": 1
+ },
+ "1353": {
+  "definition": 132012,
+  "quantity": 1
+ },
+ "1354": {
+  "definition": 132013,
+  "quantity": 1
+ },
+ "1355": {
+  "definition": 132018,
+  "quantity": 1
+ },
+ "1356": {
+  "definition": 132019,
+  "quantity": 1
+ },
+ "1357": {
+  "definition": 132043,
+  "quantity": 1
+ },
+ "1358": {
+  "definition": 134001,
+  "quantity": 1
+ },
+ "1359": {
+  "definition": 134002,
+  "quantity": 1
+ },
+ "1360": {
+  "definition": 134003,
+  "quantity": 1
+ },
+ "1361": {
+  "definition": 134004,
+  "quantity": 1
+ },
+ "1362": {
+  "definition": 134005,
+  "quantity": 1
+ },
+ "1363": {
+  "definition": 134006,
+  "quantity": 1
+ },
+ "1364": {
+  "definition": 134007,
+  "quantity": 1
+ },
+ "1365": {
+  "definition": 134008,
+  "quantity": 1
+ },
+ "1366": {
+  "definition": 134009,
+  "quantity": 1
+ },
+ "1367": {
+  "definition": 134010,
+  "quantity": 1
+ },
+ "1368": {
+  "definition": 134011,
+  "quantity": 1
+ },
+ "1369": {
+  "definition": 134012,
+  "quantity": 1
+ },
+ "1370": {
+  "definition": 134013,
+  "quantity": 1
+ },
+ "1371": {
+  "definition": 134015,
+  "quantity": 1
+ },
+ "1372": {
+  "definition": 134043,
+  "quantity": 1
+ },
+ "1373": {
+  "definition": 135001,
+  "quantity": 1
+ },
+ "1374": {
+  "definition": 135002,
+  "quantity": 1
+ },
+ "1375": {
+  "definition": 135003,
+  "quantity": 1
+ },
+ "1376": {
+  "definition": 135004,
+  "quantity": 1
+ },
+ "1377": {
+  "definition": 135005,
+  "quantity": 1
+ },
+ "1378": {
+  "definition": 135006,
+  "quantity": 1
+ },
+ "1379": {
+  "definition": 135007,
+  "quantity": 1
+ },
+ "1380": {
+  "definition": 135008,
+  "quantity": 1
+ },
+ "1381": {
+  "definition": 135009,
+  "quantity": 1
+ },
+ "1382": {
+  "definition": 135010,
+  "quantity": 1
+ },
+ "1383": {
+  "definition": 135011,
+  "quantity": 1
+ },
+ "1384": {
+  "definition": 135012,
+  "quantity": 1
+ },
+ "1385": {
+  "definition": 135013,
+  "quantity": 1
+ },
+ "1386": {
+  "definition": 135021,
+  "quantity": 1
+ },
+ "1387": {
+  "definition": 135043,
+  "quantity": 1
+ },
+ "1388": {
+  "definition": 135046,
+  "quantity": 1
+ },
+ "1389": {
+  "definition": 138001,
+  "quantity": 1
+ },
+ "1390": {
+  "definition": 138002,
+  "quantity": 1
+ },
+ "1391": {
+  "definition": 138003,
+  "quantity": 1
+ },
+ "1392": {
+  "definition": 138004,
+  "quantity": 1
+ },
+ "1393": {
+  "definition": 138005,
+  "quantity": 1
+ },
+ "1394": {
+  "definition": 138006,
+  "quantity": 1
+ },
+ "1395": {
+  "definition": 138007,
+  "quantity": 1
+ },
+ "1396": {
+  "definition": 138008,
+  "quantity": 1
+ },
+ "1397": {
+  "definition": 138009,
+  "quantity": 1
+ },
+ "1398": {
+  "definition": 138010,
+  "quantity": 1
+ },
+ "1399": {
+  "definition": 138011,
+  "quantity": 1
+ },
+ "1400": {
+  "definition": 138012,
+  "quantity": 1
+ },
+ "1401": {
+  "definition": 138013,
+  "quantity": 1
+ },
+ "1402": {
+  "definition": 138016,
+  "quantity": 1
+ },
+ "1403": {
+  "definition": 138022,
+  "quantity": 1
+ },
+ "1404": {
+  "definition": 138043,
+  "quantity": 1
+ },
+ "1405": {
+  "definition": 138047,
+  "quantity": 1
+ },
+ "1406": {
+  "definition": 140001,
+  "quantity": 1
+ },
+ "1407": {
+  "definition": 140002,
+  "quantity": 1
+ },
+ "1408": {
+  "definition": 140003,
+  "quantity": 1
+ },
+ "1409": {
+  "definition": 140004,
+  "quantity": 1
+ },
+ "1410": {
+  "definition": 140005,
+  "quantity": 1
+ },
+ "1411": {
+  "definition": 140006,
+  "quantity": 1
+ },
+ "1412": {
+  "definition": 140007,
+  "quantity": 1
+ },
+ "1413": {
+  "definition": 140008,
+  "quantity": 1
+ },
+ "1414": {
+  "definition": 140010,
+  "quantity": 1
+ },
+ "1415": {
+  "definition": 140011,
+  "quantity": 1
+ },
+ "1416": {
+  "definition": 140012,
+  "quantity": 1
+ },
+ "1417": {
+  "definition": 140013,
+  "quantity": 1
+ },
+ "1418": {
+  "definition": 140025,
+  "quantity": 1
+ },
+ "1419": {
+  "definition": 140043,
+  "quantity": 1
+ },
+ "1420": {
+  "definition": 142001,
+  "quantity": 1
+ },
+ "1421": {
+  "definition": 142002,
+  "quantity": 1
+ },
+ "1422": {
+  "definition": 142003,
+  "quantity": 1
+ },
+ "1423": {
+  "definition": 142004,
+  "quantity": 1
+ },
+ "1424": {
+  "definition": 142005,
+  "quantity": 1
+ },
+ "1425": {
+  "definition": 142006,
+  "quantity": 1
+ },
+ "1426": {
+  "definition": 142007,
+  "quantity": 1
+ },
+ "1427": {
+  "definition": 142008,
+  "quantity": 1
+ },
+ "1428": {
+  "definition": 142010,
+  "quantity": 1
+ },
+ "1429": {
+  "definition": 142011,
+  "quantity": 1
+ },
+ "1430": {
+  "definition": 142012,
+  "quantity": 1
+ },
+ "1431": {
+  "definition": 142013,
+  "quantity": 1
+ },
+ "1432": {
+  "definition": 142043,
+  "quantity": 1
+ },
+ "1433": {
+  "definition": 161001,
+  "quantity": 1
+ },
+ "1434": {
+  "definition": 162001,
+  "quantity": 1
+ },
+ "1435": {
+  "definition": 163001,
+  "quantity": 1
+ }
+}

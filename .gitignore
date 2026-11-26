@@ -1,0 +1,11 @@
+# Nunca versionar arquivos do jogo, chaves ou builds
+*.exe
+*.dll
+*.zip
+*.log
+*.assets
+*.resS
+*.key
+*privada*
+launcher/update/
+release/

@@ -828,7 +828,7 @@ public sealed class UpdateResult
 }
 public static class Updater
 {
-    public const string Version = "0.6";
+    public const string Version = "0.6.1";
     public const string Repo = "MiguelMussalam/ballistic-launcher";
     const string PublicKeyXml = "<RSAKeyValue><Modulus>yZTNj2m7COE7sXRyrZkt/0KIapxj9GHVMOoTS2X80oXh0NC3uQLIofCgOJhNY+6gVyczjtO1k76Wrn4B45uYEkHIeZLDtUcKUnaZweaI2f+EllCuAxE5uAr3LFQsjVJGzlXJwk9FO4pjzl1or1XSPy/n3N4Z1YQLfehNJ8UYapXMJZ1vlz/f3W0RfAhDtiUAWHZ5x5WKxTAFTGioi8790fIEwRsR6+fesapwuL0eiH21UHJ7KqGAd+jIZzK8mg/egnJ42mDzemIIxhIEvNvXVNVlhWLdxlDzOZueHez29PQrOshUn65eZ2r99QJi4zGXjyn8NQ65W3o6JjN9AuOAZQ==</Modulus><Exponent>AQAB</Exponent></RSAKeyValue>";
     const string SettingsDir = "BallisticOverkill_Data/Plugins/steam_settings/";
@@ -843,7 +843,7 @@ public static class Updater
     static byte[] Get(string url)
     {
         var req = (HttpWebRequest)WebRequest.Create(url);
-        req.UserAgent = "Ballistic-Launcher/" + Version; req.Timeout = 15000; req.ReadWriteTimeout = 30000; req.AllowAutoRedirect = true;
+        req.UserAgent = "Ballistic-Launcher/" + Version; req.Accept = "application/vnd.github+json, */*"; req.Timeout = 15000; req.ReadWriteTimeout = 30000; req.AllowAutoRedirect = true;
         using (var resp = req.GetResponse()) using (var s = resp.GetResponseStream()) using (var ms = new MemoryStream()) { s.CopyTo(ms); return ms.ToArray(); }
     }
     static string Sha256(byte[] data) { using (var h = SHA256.Create()) return BitConverter.ToString(h.ComputeHash(data)).Replace("-", "").ToLowerInvariant(); }
@@ -858,7 +858,16 @@ public static class Updater
     public static UpdateResult Run(string root, bool gameRunning, Action<string> progress)
     {
         ServicePointManager.SecurityProtocol |= (SecurityProtocolType)3072; // TLS 1.2 (GitHub)
+        // Resolve the latest tag through the API: the "releases/latest/download" redirect is edge-cached and kept
+        // serving the previous release to .NET clients for a while after publishing. Fall back to it if the API fails.
         string baseUrl = "https://github.com/" + Repo + "/releases/latest/download/";
+        try
+        {
+            string json = Encoding.UTF8.GetString(Get("https://api.github.com/repos/" + Repo + "/releases/latest"));
+            var tag = Regex.Match(json, @"""tag_name""\s*:\s*""(v[0-9.]+)""");
+            if (tag.Success) baseUrl = "https://github.com/" + Repo + "/releases/download/" + tag.Groups[1].Value + "/";
+        }
+        catch { }
         byte[] manifestBytes = Get(baseUrl + "manifest.json");
         byte[] signature = Convert.FromBase64String(Encoding.ASCII.GetString(Get(baseUrl + "manifest.sig")).Trim());
         if (!VerifySignature(manifestBytes, signature)) throw new InvalidDataException("assinatura inválida");

@@ -1,6 +1,6 @@
 {
   "servidores": [
     { "nome": "Local (este PC)", "endereco": "127.0.0.1", "porta": 28016 },
-    { "nome": "VPS", "endereco": "", "porta": 28016 }
+    { "nome": "VPS (Azure)", "endereco": "68.211.88.86", "porta": 28016 }
   ]
 }

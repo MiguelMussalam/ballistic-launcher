@@ -285,8 +285,10 @@ public sealed class LauncherForm : Form
     const float DriftX = 18f, DriftY = 0f;           // horizontal-only drift (vertical half-pixel steps looked choppy)
     const int PhasesX = 8, PhasesY = 1;             // 1/8 px horizontal sub-pixel copies
     Bitmap[,] artPhases;
-    Bitmap artLayer, overlay, frame, labels, glass;
+    Bitmap artLayer, overlay, frame, labels, glass, edge, labelsFade;
     Point labelsAt;
+    const int EdgeW = 110;                           // width of the glass fade-out strip right of the panel
+    int labelsFadeAt = Int32.MinValue;
     int driftTicks;
     float artBaseX, artBaseY;
     readonly Timer drift = new Timer { Interval = 25 }; // ~40 fps with timeBeginPeriod(1) for a steady cadence
@@ -417,7 +419,25 @@ public sealed class LauncherForm : Form
         g.CompositingMode = CompositingMode.SourceCopy;
         g.DrawImageUnscaled(frame, 0, TitleH); // frame is opaque: plain copy, no blending
         g.CompositingMode = CompositingMode.SourceOver;
-        if (labels != null) g.DrawImageUnscaled(labels, labelsAt.X, labelsAt.Y); // logo + caption: window only, never behind the glass
+        int stripX = panel.Right;
+        bool strip = stripX > RailW;
+        if (strip) { EnsureGlass(); g.DrawImageUnscaled(edge, stripX, TitleH); }
+        if (labels != null) // logo + caption: window only, never behind the glass; fades in across the edge strip
+        {
+            if (!strip) g.DrawImageUnscaled(labels, labelsAt.X, labelsAt.Y);
+            else
+            {
+                var clip = g.Clip;
+                g.SetClip(new Rectangle(stripX + EdgeW, 0, ClientSize.Width, ClientSize.Height), CombineMode.Intersect);
+                g.DrawImageUnscaled(labels, labelsAt.X, labelsAt.Y);
+                g.Clip = clip;
+                if (stripX + EdgeW > labelsAt.X && stripX < labelsAt.X + labels.Width)
+                {
+                    // Columns outside the labels bitmap come out transparent, so the fade can hang over its ends.
+                    g.DrawImageUnscaled(LabelsFade(stripX), stripX, labelsAt.Y);
+                }
+            }
+        }
         int x = RailW + 56, h = ClientSize.Height;
         g.SmoothingMode = SmoothingMode.AntiAlias;
         using (var dot = new SolidBrush(liveColor)) g.FillEllipse(dot, x + 2, h - 145, 9, 9);
@@ -501,7 +521,8 @@ public sealed class LauncherForm : Form
         {
             Caption("Servidor (anfitrião)", y, true);
             Caption("Roda o servidor dedicado neste PC, em segundo plano.", y + 30);
-            PanelButton(server, "Iniciar servidor", "", 24, y + 54, w).Click += delegate { Guard(ToggleServer); };
+            PanelButton(server, "Iniciar servidor", "", 24, y + 54, (w - 8) / 2).Click += delegate { Guard(ToggleServer); };
+            PanelButton(new FlatButton(), "Configurar partida", "", 24 + (w + 8) / 2, y + 54, (w - 8) / 2).Click += delegate { Guard(OpenMatchConfig); };
             serverPoll.Tick += delegate { UpdateServerButton(); }; serverPoll.Start(); UpdateServerButton();
             y += 112;
         }
@@ -547,22 +568,64 @@ public sealed class LauncherForm : Form
         g.CompositingMode = CompositingMode.SourceCopy;
         if (frame != null) g.DrawImageUnscaled(frame, -panel.Left, 0); else g.Clear(Theme.Panel);
         g.CompositingMode = CompositingMode.SourceOver;
-        if (glass == null || glass.Height != panel.Height)
-        {
-            // Pre-rendered once: gradient fills are the expensive part and every transparent label repaints this.
-            glass = new Bitmap(panel.Width, panel.Height, System.Drawing.Imaging.PixelFormat.Format32bppPArgb);
-            using (var gg = Graphics.FromImage(glass))
-            using (var b = new LinearGradientBrush(new Rectangle(-4, -4, glass.Width + 8, glass.Height + 8), Theme.Panel, Theme.Panel, 45f, true))
-            {
-                var blend = new ColorBlend(4);
-                blend.Colors = new[] { Color.FromArgb(GlassAlphaTopLeft, Theme.Panel), Color.FromArgb(225, Theme.Panel), Color.FromArgb(160, Theme.Panel), Color.FromArgb(GlassAlphaBottomRight, Theme.Panel) };
-                blend.Positions = new[] { 0f, 0.45f, 0.75f, 1f };
-                b.InterpolationColors = blend;
-                gg.Clear(Color.Transparent);
-                gg.FillRectangle(b, 0, 0, glass.Width, glass.Height);
-            }
-        }
+        EnsureGlass();
         g.DrawImageUnscaled(glass, 0, 0);
+    }
+
+    // Pre-rendered once: gradient fills are the expensive part and every transparent label repaints the glass.
+    // "edge" continues the glass past the panel's right side, fading each row from the glass's last column to nothing
+    // (cosine falloff: no visible step where the panel ends and no kink where the fade ends).
+    void EnsureGlass()
+    {
+        if (glass != null && glass.Height == panel.Height) return;
+        glass = new Bitmap(panel.Width, panel.Height, System.Drawing.Imaging.PixelFormat.Format32bppPArgb);
+        using (var gg = Graphics.FromImage(glass))
+        using (var b = new LinearGradientBrush(new Rectangle(-4, -4, glass.Width + 8, glass.Height + 8), Theme.Panel, Theme.Panel, 45f, true))
+        {
+            var blend = new ColorBlend(4);
+            blend.Colors = new[] { Color.FromArgb(GlassAlphaTopLeft, Theme.Panel), Color.FromArgb(225, Theme.Panel), Color.FromArgb(160, Theme.Panel), Color.FromArgb(GlassAlphaBottomRight, Theme.Panel) };
+            blend.Positions = new[] { 0f, 0.45f, 0.75f, 1f };
+            b.InterpolationColors = blend;
+            gg.Clear(Color.Transparent);
+            gg.FillRectangle(b, 0, 0, glass.Width, glass.Height);
+        }
+        edge = new Bitmap(EdgeW, glass.Height, System.Drawing.Imaging.PixelFormat.Format32bppPArgb);
+        for (int y = 0; y < glass.Height; y++)
+        {
+            int a = glass.GetPixel(glass.Width - 1, y).A;
+            for (int x = 0; x < EdgeW; x++)
+                edge.SetPixel(x, y, Color.FromArgb((int)Math.Round(a * EdgeFalloff(x)), Theme.Panel));
+        }
+        labelsFadeAt = Int32.MinValue;
+    }
+    static double EdgeFalloff(int x) { return 0.5 * (1 + Math.Cos(Math.PI * (x + 0.5) / EdgeW)); }
+
+    // The logo/caption never sits behind the glass; inside the edge strip it fades in (0 at the panel, full at the end)
+    // so it isn't cut by a hard vertical line either. Cached per panel position (it only changes while sliding).
+    Bitmap LabelsFade(int stripX)
+    {
+        if (labelsFade != null && labelsFadeAt == stripX) return labelsFade;
+        if (labelsFade != null) labelsFade.Dispose();
+        labelsFade = new Bitmap(EdgeW, labels.Height, System.Drawing.Imaging.PixelFormat.Format32bppPArgb);
+        using (var g = Graphics.FromImage(labelsFade))
+        {
+            g.Clear(Color.Transparent);
+            g.CompositingMode = CompositingMode.SourceCopy;
+            int from = Math.Max(0, stripX - labelsAt.X), to = Math.Min(labels.Width, stripX - labelsAt.X + EdgeW);
+            if (to > from) g.DrawImage(labels, new Rectangle(labelsAt.X + from - stripX, 0, to - from, labels.Height), new Rectangle(from, 0, to - from, labels.Height), GraphicsUnit.Pixel);
+        }
+        var data = labelsFade.LockBits(new Rectangle(0, 0, EdgeW, labels.Height), System.Drawing.Imaging.ImageLockMode.ReadWrite, System.Drawing.Imaging.PixelFormat.Format32bppPArgb);
+        var px = new byte[data.Stride * data.Height];
+        System.Runtime.InteropServices.Marshal.Copy(data.Scan0, px, 0, px.Length);
+        for (int x = 0; x < EdgeW; x++)
+        {
+            double k = 1 - EdgeFalloff(x); // premultiplied: scale all four channels
+            for (int y = 0; y < data.Height; y++) { int i = y * data.Stride + x * 4; for (int c = 0; c < 4; c++) px[i + c] = (byte)(px[i + c] * k); }
+        }
+        System.Runtime.InteropServices.Marshal.Copy(px, 0, data.Scan0, px.Length);
+        labelsFade.UnlockBits(data);
+        labelsFadeAt = stripX;
+        return labelsFade;
     }
 
     void BuildMain()
@@ -596,7 +659,7 @@ public sealed class LauncherForm : Form
         panel.Left = slideFrom + (int)Math.Round((slideTo - slideFrom) * eased);
         // The fade strip lives on the form, right of the panel: repaint the band it moved through.
         int from = Math.Min(oldRight, panel.Right);
-        Invalidate(new Rectangle(from, TitleH, Math.Abs(panel.Right - oldRight) + 2, ClientSize.Height - TitleH), true);
+        Invalidate(new Rectangle(from, TitleH, Math.Abs(panel.Right - oldRight) + EdgeW + 2, ClientSize.Height - TitleH), true);
         panel.Invalidate(true); // its see-through backdrop is window-anchored, so it must repaint while sliding
         panel.Update(); Update();
         if (t >= 1) slide.Stop();
@@ -660,6 +723,21 @@ public sealed class LauncherForm : Form
         string text = on ? "Parar servidor" : "Iniciar servidor";
         if (server.Text != text) { server.Text = text; server.Glyph = on ? "" : ""; server.Fill = on ? Color.FromArgb(46, 125, 80) : Theme.Field; server.HoverFill = on ? Color.FromArgb(56, 145, 95) : Color.FromArgb(40, 47, 58); server.Invalidate(); }
         foreach (var p in running) p.Dispose();
+    }
+    void OpenMatchConfig()
+    {
+        string cfg = Path.Combine(Path.GetDirectoryName(serverExe), "config.txt");
+        if (!File.Exists(cfg)) throw new FileNotFoundException("config.txt do servidor não encontrado.");
+        string profileCfg = Path.GetFullPath(Path.Combine(root, "..", "..", "config", "perfis", "local", "servidor", "config.txt"));
+        using (var d = new MatchConfigDialog(cfg, File.Exists(profileCfg) ? profileCfg : null, root))
+        {
+            d.ShowDialog(this);
+            if (!d.Saved) return;
+        }
+        var running = ServerProcesses(); bool on = running.Length > 0; foreach (var p in running) p.Dispose();
+        if (on && MessageBox.Show(this, "Configuração salva. Reiniciar o servidor agora para aplicar?", "Configurar partida", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+        { ToggleServer(); ToggleServer(); SetPanelStatus("Servidor reiniciado com a nova configuração.", Theme.Ok); return; }
+        SetPanelStatus(on ? "Configuração salva. Reinicie o servidor para aplicar." : "Configuração da partida salva.", Theme.Ok);
     }
     void ToggleServer()
     {
@@ -828,7 +906,7 @@ public sealed class UpdateResult
 }
 public static class Updater
 {
-    public const string Version = "0.6.1";
+    public const string Version = "0.7";
     public const string Repo = "MiguelMussalam/ballistic-launcher";
     const string PublicKeyXml = "<RSAKeyValue><Modulus>yZTNj2m7COE7sXRyrZkt/0KIapxj9GHVMOoTS2X80oXh0NC3uQLIofCgOJhNY+6gVyczjtO1k76Wrn4B45uYEkHIeZLDtUcKUnaZweaI2f+EllCuAxE5uAr3LFQsjVJGzlXJwk9FO4pjzl1or1XSPy/n3N4Z1YQLfehNJ8UYapXMJZ1vlz/f3W0RfAhDtiUAWHZ5x5WKxTAFTGioi8790fIEwRsR6+fesapwuL0eiH21UHJ7KqGAd+jIZzK8mg/egnJ42mDzemIIxhIEvNvXVNVlhWLdxlDzOZueHez29PQrOshUn65eZ2r99QJi4zGXjyn8NQ65W3o6JjN9AuOAZQ==</Modulus><Exponent>AQAB</Exponent></RSAKeyValue>";
     const string SettingsDir = "BallisticOverkill_Data/Plugins/steam_settings/";
@@ -1034,5 +1112,140 @@ public class DarkMenuRenderer : ToolStripProfessionalRenderer
     {
         TextRenderer.DrawText(e.Graphics, e.Text, e.TextFont, new Rectangle(8, 0, e.Item.Width - 12, e.Item.Height), Theme.Text,
             TextFormatFlags.VerticalCenter | TextFormatFlags.SingleLine | TextFormatFlags.EndEllipsis);
+    }
+}
+
+// Host-only "Configurar partida" pop-up: edits the dedicated server's config.txt (keeping its comments) and the local
+// profile master (C:\Ballistic\config\perfis\local\servidor\config.txt) so Aplicar-Perfil doesn't undo the change.
+public sealed class MatchConfigDialog : Form
+{
+    sealed class Choice { public int Value; public string Text; public override string ToString() { return Text; } }
+    static readonly string[] MapNames = { "Sunnsquare Mall", "Corporate Park", "Hollow", "Nox Museum", "Overhead", "Citadel", "Hakim", "Blackfield", "Wonderdome", "Reinstate" };
+    static readonly string[] MapFolders = { "sunnsquare_mall", "corporate_park", "hollow", "museum", "overhead", "citadel", "hakim", "blackfield", "wonderdome", "reinstate" };
+    static readonly string[] ModeNames = { "Team Deathmatch", "Conquest", "King of the Hill", "Rounds", "Free for All" };
+
+    readonly string configPath, profilePath, clientRoot;
+    readonly TextBox serverName = new TextBox(), password = new TextBox();
+    readonly DarkCombo map = new DarkCombo(), mode = new DarkCombo(), balance = new DarkCombo();
+    readonly PortBox players = new PortBox(), matchTime = new PortBox(), maxPing = new PortBox(), rounds = new PortBox(), roundTime = new PortBox();
+    readonly PictureBox preview = new PictureBox();
+    public bool Saved { get; private set; }
+
+    public MatchConfigDialog(string configPath, string profilePath, string clientRoot)
+    {
+        this.configPath = configPath; this.profilePath = profilePath; this.clientRoot = clientRoot;
+        FormBorderStyle = FormBorderStyle.None; StartPosition = FormStartPosition.CenterParent; ShowInTaskbar = false;
+        ClientSize = new Size(560, 540); BackColor = Theme.Panel; ForeColor = Theme.Text; Font = new Font("Segoe UI", 10); KeyPreview = true;
+        KeyDown += delegate(object s, KeyEventArgs e) { if (e.KeyCode == Keys.Escape) Close(); };
+        MouseDown += DragWindow;
+        Caption("Configurar partida", 24, 18, 400, 30, 14f, true).MouseDown += DragWindow;
+        Caption("Servidor deste PC. Se ele estiver rodando, é preciso reiniciar para aplicar.", 24, 52, 512, 20, 9f, false).MouseDown += DragWindow;
+        var close = new FlatButton { Glyph = "\uE8BB", Fill = Theme.Panel, HoverFill = Theme.Accent, Radius = 0, Bounds = new Rectangle(ClientSize.Width - 46, 1, 45, 40) };
+        close.Font = new Font("Segoe UI", 8f); close.Click += delegate { Close(); }; Controls.Add(close);
+
+        Caption("Nome da sala", 24, 88, 300, 20, 9f, false); Field(serverName, 24, 108, 512); serverName.MaxLength = 40;
+        Caption("Mapa inicial", 24, 148, 250, 20, 9f, false); Combo(map, 24, 168, 250);
+        for (int i = 0; i < MapNames.Length; i++) map.Items.Add(new Choice { Value = i + 1, Text = MapNames[i] });
+        preview.SetBounds(290, 148, 246, 123); preview.SizeMode = PictureBoxSizeMode.Zoom; preview.BackColor = Theme.Field; Controls.Add(preview);
+        map.SelectedIndexChanged += delegate { ShowPreview(); };
+        Caption("Modo de jogo", 24, 208, 250, 20, 9f, false); Combo(mode, 24, 228, 250);
+        for (int i = 0; i < ModeNames.Length; i++) mode.Items.Add(new Choice { Value = i + 1, Text = ModeNames[i] });
+
+        Caption("Jogadores (2–16)", 24, 290, 160, 20, 9f, false); Number(players, 24, 310, 160, 2, 16);
+        Caption("Tempo da partida (min)", 200, 290, 160, 20, 9f, false); Number(matchTime, 200, 310, 160, 1, 60);
+        Caption("Ping máximo (0 = livre)", 376, 290, 160, 20, 9f, false); Number(maxPing, 376, 310, 160, 0, 999);
+        Caption("Rodadas (modo Rounds)", 24, 350, 160, 20, 9f, false); Number(rounds, 24, 370, 160, 1, 30);
+        Caption("Tempo da rodada (s)", 200, 350, 160, 20, 9f, false); Number(roundTime, 200, 370, 160, 30, 600);
+        Caption("Autobalancear times", 376, 350, 160, 20, 9f, false); Combo(balance, 376, 370, 160);
+        balance.Items.Add(new Choice { Value = 0, Text = "Não" }); balance.Items.Add(new Choice { Value = 1, Text = "Sim" });
+        Caption("Senha (vazio = sala aberta)", 24, 410, 300, 20, 9f, false); Field(password, 24, 430, 512); password.MaxLength = 32;
+
+        var cancel = new FlatButton { Text = "Cancelar", Bounds = new Rectangle(24, 476, 150, 40) }; cancel.Click += delegate { Close(); }; Controls.Add(cancel);
+        var save = new FlatButton { Text = "Salvar", Glyph = "\uE74E", Fill = Theme.Accent, HoverFill = Color.FromArgb(240, 60, 80), Bounds = new Rectangle(386, 476, 150, 40) };
+        save.Click += delegate { Save(); }; Controls.Add(save);
+        LoadValues();
+    }
+
+    protected override CreateParams CreateParams { get { var cp = base.CreateParams; cp.ClassStyle |= 0x20000; return cp; } }
+    [System.Runtime.InteropServices.DllImport("dwmapi.dll")] static extern int DwmSetWindowAttribute(IntPtr hwnd, int attr, ref int value, int size);
+    [System.Runtime.InteropServices.DllImport("user32.dll")] static extern bool ReleaseCapture();
+    [System.Runtime.InteropServices.DllImport("user32.dll")] static extern IntPtr SendMessage(IntPtr h, int msg, IntPtr w, IntPtr l);
+    protected override void OnHandleCreated(EventArgs e)
+    { base.OnHandleCreated(e); try { int round = 2; DwmSetWindowAttribute(Handle, 33, ref round, 4); } catch { } }
+    protected override void OnPaint(PaintEventArgs e) { base.OnPaint(e); using (var p = new Pen(Theme.Line)) e.Graphics.DrawRectangle(p, 0, 0, Width - 1, Height - 1); }
+    void DragWindow(object sender, MouseEventArgs e) { if (e.Button == MouseButtons.Left) { ReleaseCapture(); SendMessage(Handle, 0xA1, (IntPtr)2, IntPtr.Zero); } }
+
+    Label Caption(string text, int x, int y, int w, int h, float size, bool header)
+    {
+        var l = new Label { Text = text, Bounds = new Rectangle(x, y, w, h), ForeColor = header ? Theme.Text : Theme.Muted, BackColor = Theme.Panel,
+            Font = header ? new Font("Segoe UI Semibold", size) : new Font("Segoe UI", size) };
+        Controls.Add(l); return l;
+    }
+    void Field(TextBox t, int x, int y, int w)
+    { t.SetBounds(x, y, w, 28); t.BackColor = Theme.Field; t.ForeColor = Theme.Text; t.BorderStyle = BorderStyle.FixedSingle; t.Font = new Font("Segoe UI", 10.5f); Controls.Add(t); }
+    void Combo(DarkCombo c, int x, int y, int w) { c.SetBounds(x, y, w, 28); Controls.Add(c); }
+    void Number(PortBox b, int x, int y, int w, int min, int max) { b.Minimum = min; b.Maximum = max; b.MaxLength = 3; Field(b, x, y, w); }
+
+    void ShowPreview()
+    {
+        var c = map.SelectedItem as Choice;
+        var old = preview.Image; preview.Image = null; if (old != null) old.Dispose();
+        if (c == null) return;
+        string f = MapFolders[c.Value - 1];
+        string path = Path.Combine(clientRoot, "BallisticOverkill_Data", "StreamingAssets", "map_" + f, f + "_512.jpg");
+        if (File.Exists(path)) using (var s = File.OpenRead(path)) using (var b = new Bitmap(s)) preview.Image = new Bitmap(b);
+    }
+
+    static string Read(string text, string key, string fallback)
+    {
+        var m = Regex.Match(text, "(?m)^" + key + "=(.*?)\\r?$");
+        return m.Success ? m.Groups[1].Value.Trim() : fallback;
+    }
+    static int ReadInt(string text, string key, int fallback) { int v; return Int32.TryParse(Read(text, key, ""), out v) ? v : fallback; }
+    static void Pick(DarkCombo c, int value) { foreach (var o in c.Items) if (((Choice)o).Value == value) { c.SelectedItem = o; return; } c.SelectedIndex = 0; }
+
+    void LoadValues()
+    {
+        string t = File.ReadAllText(configPath);
+        serverName.Text = Read(t, "ServerName", "Ballistic");
+        Pick(map, ReadInt(t, "GameMap", 1)); Pick(mode, ReadInt(t, "GameMode", 1)); Pick(balance, ReadInt(t, "Autobalance", 0));
+        players.Value = ReadInt(t, "MaxPlayers", 8); matchTime.Value = ReadInt(t, "MatchTime", 10); maxPing.Value = ReadInt(t, "MaxPing", 0);
+        rounds.Value = ReadInt(t, "Rounds", 7); roundTime.Value = ReadInt(t, "RoundTime", 90);
+        password.Text = Read(t, "Password", "");
+        ShowPreview();
+    }
+
+    static string Set(string text, string key, string value)
+    {
+        var re = new Regex("(?m)^" + key + "=.*?(\\r?)$");
+        return re.IsMatch(text) ? re.Replace(text, key + "=" + value.Replace("$", "$$") + "$1", 1) : text.TrimEnd() + Environment.NewLine + key + "=" + value + Environment.NewLine;
+    }
+    void Save()
+    {
+        string name = serverName.Text.Trim(), pass = password.Text.Trim();
+        if (name.Length == 0) { MessageBox.Show(this, "Informe o nome da sala.", "Configurar partida"); return; }
+        if (name.IndexOfAny(new[] { '\r', '\n', '=' }) >= 0 || pass.IndexOfAny(new[] { '\r', '\n', '=', ' ' }) >= 0)
+        { MessageBox.Show(this, "Nome e senha não podem ter quebra de linha nem '='; a senha não pode ter espaços.", "Configurar partida"); return; }
+        var values = new List<KeyValuePair<string, string>>
+        {
+            new KeyValuePair<string, string>("ServerName", name),
+            new KeyValuePair<string, string>("GameMap", ((Choice)map.SelectedItem).Value.ToString()),
+            new KeyValuePair<string, string>("GameMode", ((Choice)mode.SelectedItem).Value.ToString()),
+            new KeyValuePair<string, string>("MaxPlayers", ((int)players.Value).ToString()),
+            new KeyValuePair<string, string>("MatchTime", ((int)matchTime.Value).ToString()),
+            new KeyValuePair<string, string>("MaxPing", ((int)maxPing.Value).ToString()),
+            new KeyValuePair<string, string>("Rounds", ((int)rounds.Value).ToString()),
+            new KeyValuePair<string, string>("RoundTime", ((int)roundTime.Value).ToString()),
+            new KeyValuePair<string, string>("Autobalance", ((Choice)balance.SelectedItem).Value.ToString()),
+            new KeyValuePair<string, string>("Password", pass),
+        };
+        foreach (string path in new[] { configPath, profilePath })
+        {
+            if (path == null || !File.Exists(path)) continue;
+            string text = File.ReadAllText(path);
+            foreach (var kv in values) text = Set(text, kv.Key, kv.Value);
+            File.WriteAllText(path, text, new UTF8Encoding(false));
+        }
+        Saved = true; Close();
     }
 }
